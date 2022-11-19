@@ -1,0 +1,12 @@
+17. What are the minimum permission needed for:
+--> Copy a directory
+    permission for source directory {rx} 
+    and permissions for target parent directory{wx}
+--> Copy a file 
+    permission for source file {r}
+    and and permission for target parent directory {wx}
+--> Delete a file {w}
+--> Change to a directory {rwx}
+--> List a directory content (ls command) {rx}
+--> View a file content (more/cat command) {r}
+--> Modify a file content {rw}
