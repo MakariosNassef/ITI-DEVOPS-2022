@@ -1,0 +1,47 @@
+
+1- make repo on github account 
+
+	install git --> https://git-scm.com/downloads
+	git config --global user.name "your_username"
+	git config --global user.email "your_email_address@example.com"
+	git config --global --list
+
+2- in your project open cmd 
+        git init 
+        git add .
+        git commit -m " your msg"
+        git branch -M main
+        git remote add origin linkofyourrepo
+        git push -u origin main 
+
+3- to create new branch : 
+        git checkout -b esmBranchGdeed
+        git status
+        git add .
+        git commit -m "your msg"
+        git push origin yournewbranch
+4-   to merge new branch to the main branch: 
+        git checkout main 
+        git branch 
+        git merge yournewbranch
+        git push origin main 
+
+5- to download a repo 
+
+        git clone linkofrepo
+6- to update your branch with new updates in master barnch for example:
+                git pull origin barnchName
+
+
+
+7- to view commit --> git log
+
+        git checkout numofcommit 
+
+        reset --> git reset --hard numofcommit
+
+---------------------------------------------------
+
+branch --> task-1-login
+----------------------------------------------------
+
