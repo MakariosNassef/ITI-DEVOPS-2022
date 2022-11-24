@@ -1,0 +1,162 @@
+1- kill -SIGNAL PID or %JobID 
+
+2- kill -l   --> list all signals
+
+3- man 7 signal 
+
+4- kill -SIGKILL PID
+
+5- kill -SIGKILL %JobID
+
+6- kill -signalNumber PID
+
+7- kill %JobID  --> terminate job
+7- kill processId  --> terminate job
+
+
+
+8- kill process using name --> 
+
+        pkill processName
+        killall processName
+9- kill process for spisfic user 
+
+
+        killall -u userName
+
+10 -> top 
+        PR
+        NI --> use to change periority 
+
+11 --> to search on process --> 
+        pgrep processName
+        pgrep -l process   (-l processName + processId)
+        pgrep -l -u userName
+        pgrep -l -u userId
+
+12 - redirection >
+
+        ps -e > newFile
+         
+        cat /etc/shadow > newFile 2> errFile
+    
+    append --> 
+            echo "hello" > newFile
+            echo "hi" >> newFile
+13- Buffer | (pipe)
+
+        ps -e | more 
+
+        ps -e | more | tee teeFile
+        ps -e | tee file | more 
+
+        ps -e | more > myFile
+
+14 --> string
+
+        wc --> word count 
+
+        wc fileName 
+            1 2 3 fileName 
+
+            1 --> lines count 
+            2 --> words count
+            3 --> charchter count
+
+        wc -l fileName 
+        wc -w fileName
+        wc -c fileName
+
+    users count --> 
+
+        wc -l /etc/passwd  ==> users Count
+        wc -l /etc/group  ==> groups Count
+    
+    users commnads count --> 
+        in one step: 
+            ls -l /usr/bin | wc -l  
+        
+        in 2 steps: 
+            ls -l /usr/bin > usrCommnads 
+            wc -l usrCommnads 
+        
+
+15- 
+        to search in file: 
+            grep 
+
+            grep keyword FilePath
+        i --> igone case senstive
+            grep -i keyword FilePath
+            grep -v keyword FilePath (except the keyword)
+            grep ^char fileName
+
+16- tr --> translate 
+
+        echo "hello" | a-z A-Z
+
+17-     cut --> use to divide file according vertically to delimeter
+
+cut -f1 -d: /etc/passwd | more 
+
+
+cut -f1,5 -d: /etc/passwd | grep ^m    (only f1 and f 5)
+
+cut -f1-5 -d: /etc/passwd | grep ^m    (from f1 to f 5)
+
+16- 
+ Inode Table --> 
+        InodeNum  type Permission(MODE) uid gid lastChange lastaccess path 
+
+directory Table --> InodeNum FileName
+
+    directory 
+            InodeNum FileName
+
+17- shortcut --> windows 
+        In Lunix: 
+
+        1- soft link --> 
+                1- if delete the original it will be userless --> new inode number 
+                2- smaller than the original file
+                3- ln -s originalFile newSoftLinkName
+
+        2- hard link
+                1- if delete the originalfile  it will not deleted  --> the same inode number of the original  
+                2- same size of original file
+                3- ln  originalFile newHardLinkName
+
+
+18- Archiving file: --> tar 
+        -c create -f files
+        tar -cf myTar.tar FileName fileName ...
+
+        tar -fvt myTar.tar  (t to list)
+
+        tar -xvf myTar.tar  (x to extract tar file)
+
+19- compress --> 
+            1- gzip 65%
+            gzip file.tar  --> file.tar.gz
+            gunzip file.tar.gz  --> (extract file (to tar file))
+                1- less in size 
+                2- more speed in compress
+
+            2- bzip2 80%
+                1- less  more than gzip in size 
+                2- less speed in compress
+               bunzip2 file.tar.bz2  --> (extract file (to tar file))
+
+
+20-find --> to search file
+
+        find destination -name fileName
+
+         find /home/mariem -name "na*" > resultsearch 2> errsearch &
+        more resultsearch 
+        
+        find /home/mariem -user ali | more
+        find /home/mariem -user root | more
+        find /home/mariem -mtime -2
+        
+21- Install 

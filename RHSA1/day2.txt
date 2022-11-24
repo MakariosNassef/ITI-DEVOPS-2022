@@ -1,0 +1,68 @@
+
+man --> 9 sections (chapters)
+man man 
+ch 1 --> user commands 
+ch 5 --> file format 
+ch 8 --> Root commands
+
+
+man passwd  --> ch1 --> user commands 
+man 5 passwd --> ch5 --> file format 
+
+man page --> Name 
+            synposis
+            Desctription
+            options 
+            Author
+            report bug
+            full doc.
+
+man -a passwd --> all manuals of passwd
+
+man -k passwd --> all keywords contain passwd 
+---------------------------------
+whatis commandNAME
+
+ls --help 
+-------------------------------------------
+USERS --> LINUX 
+    1- normal user
+    2- group
+    3- service
+
+cat /etc/passwd --> for aach user --> LINE 
+7 fields 
+
+mariem: --> login name 
+x: --> encrypted
+1000: --> uid
+1000: --> gID
+mariem,,,: --> comment
+/home/mariem: --> home directory
+/bin/bash  --> shell 
+
+
+cat /etc/shadow --> encrypted password file 
+
+mariem: login name 
+$6$qWDL2P2B$1z/HtWYeEvDFHFhJCpoQfFvh7tN47hjqSCci1iUbGr6EhNEKop.YZ.rOW9gfaL.3T4sZskR1QZFUWidR3wRQO/: --> enc. password
+17672:
+0:
+99999:
+7:
+:
+:
+
+
+
+TO Add user: 
+
+    1- sudo useradd -c "my comment" -md /home/devopsUser -u 1452 -g 7585 -s /bin/bash UserName -p MYPASSWORD
+
+
+    2- sudo passwd YOUSERNAME
+
+    3- sudo adduser --> INTERACTIVE CMD
+
+
+    

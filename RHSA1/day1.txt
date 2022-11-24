@@ -1,0 +1,58 @@
+1- Linux Components: 
+    1- Kernel --> Core OS
+    2- Shell --> Bash
+    3- Application --> Terminal
+
+2- 
+    command line --> 
+            command [option] [argumnets]
+
+3- uname --> print system info 
+    uname -n --> print  host
+    uname -a --> all info
+
+4- manual --> man COMANDNAME
+        man uname   
+
+5- cal --> calender
+    cal 8 2020
+    cal 2020
+6-  date 
+
+7- date; cal 8 2020; uname 
+
+8- whoami --> user logged in Terminal 
+    who
+9- File system --> / == root
+
+10- pwd --> print working directory 
+
+11- cd --> change directory
+
+    to go home: 
+     cd 
+     cd ~
+     cd /home/userName --> AbS path
+     cd home/userName (if you in /)
+
+    go back: 
+    cd ..
+    cd ../../.. --> relative path
+
+    go to the relative path:
+     cd -
+
+12- ls --> list directories and files in your  working directory
+    ls -a --> list all files with hidden files 
+    ls -l --> list info of directories
+    ls -la -->  list info of all files with hidden files
+    ls -a / 
+    ls -R --> list directories and sub directories
+
+13- to create file --> touch fileName
+    touch /etc/helloFile
+
+14- to create directory --> mkdir dir1
+        mkdir /home/dir2
+
+

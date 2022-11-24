@@ -1,0 +1,77 @@
+Redirection 
+ echo "test file"   >  File1
+
+ ls -R / > file2  2> errors 
+
+ >> --> append 
+
+ cat > NewFile --> create file , write 
+
+
+ input --> ls -lR /   --> output  as input other command 
+
+tee --> screen + file 
+
+ps -e | tee MyFile --> screen + MyFile 
+
+ps -e | tee MyFile | more 
+
+ps -e > newFile &&  more newFile  === 
+
+ps -e | tee file1 | more 
+---------------------------------------
+
+wc --> word count --> line No. word count, char no.
+
+wc -l --> lines
+
+wc -c --> char 
+
+wc -w --> words 
+
+wc -l /etc/passwd --> users num.
+
+wc -l /etc/group --> groups num.
+
+user command count --> 
+ ls -l /usr/bin | wc -l 
+
+ ls -l /usr/bin > userComFile  
+ ls -l userComFile
+
+
+ wc -l /usr/bin -->  is a directory
+
+
+---------------------------
+    myFile --> directory
+        table      inode Num 
+        myFile     12142 
+
+
+ file --> inode num. 
+
+ inode table 
+
+ inode num. type, Permission, num of links, uID, gID, lastChangeofFile, path of file 
+ --------------------------------
+
+ links --> softLink 
+           hardLink
+
+hardLink --> ln /etc/passwd  
+---------------------------------------
+
+tar --> used to archive files
+
+    to create tar file --> tar -cvf file.tar f1 f2 f3 ...
+
+    c --> create 
+    v -->  verbose 
+    f --> file 
+
+    tar -xvf file.tar
+
+comp --> gzip -->reduce the size file
+         bzip2 --> reduce the size file
+

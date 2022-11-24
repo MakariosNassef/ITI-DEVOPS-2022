@@ -1,0 +1,372 @@
+to add user to group 
+    sudo usermod -aG GROUPNAME USER
+
+to remove user from group: 
+    1- sudo gpasswd -d User GROUPNAME
+
+    2- sudo deluser USER GROUPNAME
+
+--> groups UserNAME 
+----------------------------------------------
+d -->Directory
+rwx   rwx  r-x --> permission
+
+mariem --> user owner
+mariem --> group owner 
+
+
+    File permission:
+        r --> read  --> to view file
+        w --> write --> modify content
+        x --> execute --> run file (code, app, programme)
+
+    Directory permission:
+        r --> read  --> ls 
+        w --> write --> modify content --> add, delete,edit files 
+        x --> execute --> cd 
+-------------------------------------
+        rwx     rwx      r-x
+        USER    GROUP    Other 
+
+
+
+
+
+-rw-rw-r-- 1 mariem mariem    0 نوف 19 09:18 myfile
+
+
+default permission for directories:
+    rwx --> user --> read(ls) write execute(cd)
+    rwx --> group --> read write execute
+    r-x --> other --> read + execute
+
+default permission for files:
+    rw- --> user --> read write
+    rw- --> group --> read write 
+    r-- --> other --> read
+
+
+    root --> super user 
+
+    user --> mariem ---> sudo  --> sudo 
+
+
+create file in directory --> -wx 
+
+-----------------------------
+Change Owner: 
+    userowner --> root
+    groupowner --> owner + root 
+
+chown owneruser filename
+
+
+drwxrwxr-x 2 ali  mariem 4096 نوف 19 09:18 mydir
+             user group
+ali  --> rwx
+mariem --> rwx
+other --> r-x
+-------------------------------------------
+
+    user group other 
+
+    permission: r w x 
+
+    rwx   rwx   rwx 
+
+    change owner (USER) --> ROOT only can chage user owner 
+
+        -rw-r--r-- 1 root         root 
+                     user owner   group owner
+
+        sudo chown ahmed filename 
+
+         -rw-r--r-- 1 ahmed    root 
+
+        to change groupowner --> group that the owner belongs to 
+
+        chown :GROUPOWNER(ahmed member in this group, this group is suplemntary to ahmed) filename 
+
+        chgrp GROUPOWNER(ahmed member in this group, this group is suplemntary to ahmed) filename
+
+        sudo chown UserNAME.GROUPNAME filename
+
+    ------------------------------------------
+    Rename --> file --> rwx
+        user   group   other 
+        rw- 
+
+        mv des source 
+---------------------------------
+change permission: 
+
+        R W X 
+// Sympolic permissions
+    - + = 
+    u == user
+    g == group
+    o == other
+    a == all 
+
+    1- user rwx file 
+    sudo chmod u=rwx  filename 
+
+    default --> rw 
+
+    sudo chmod u+x filename
+
+    2- user = rwx, g = r, o = --- 
+
+    sudo chmod u=rwx,g=r,o=--- filename
+    
+    3- remove r permission from group 
+
+        sudo chmod g-r filename
+    
+    4- add r for all users (user, group, other)
+        sudo chmod a+r filename
+ 
+2-  Octal mode  == 8  ==> 2^3 ==> 0 - 7 
+
+    R  == 4
+    W  == 2
+    X  == 1
+
+    user    group    other
+
+    1- u rwx, g rw, o r 
+        
+        421, 42, 4
+         7   6   4
+ 
+        sudo chmod  764 filename
+
+    2- u r, g rx, o ---
+         4   5
+        sudo chmod 450
+
+    3- u = g = o ==>  rwx 
+    777
+    sudo chmod 777 filename
+
+    4- sudo chmod 775 file name 
+        u = rwx
+        g = rwx
+        o = rx
+   # only sudo and owner of the file who can change the permission, even if i am a member in the group 
+
+   4- remove from user w 
+
+        1- sudo chmod  575 filename
+
+        2- sudo chmod -200 filename (user)
+
+        3- sudo chmod -002 filename (other)
+
+        4- sudo chmod -444 filename 
+            user 0 
+            group 0
+            remove from other  2 ==> write
+----------------------------------------------
+permission --> r w x 
+owner --> user, group 
+other
+
+
+# permission changed by only the owner of the file or sudo (root)
+
+# change the user owner only can by sudo 
+
+# change the group owner of the file only can by sudo and owner of the file but he must be a member in the group
+    
+    userowner --> mariem
+    groupowner --> reem (GROUP)  --> ali  
+
+# owner --> sudo chown newOwner filename
+# group --> chown :newGroupOwner filename
+        --> chgrp newGroupOwner filename
+
+# user and groupowner --> change userowner.groupowner filename
+
+
+permission: 
+    1- Sympolic --> UGOA
+
+
+    2- Octal --> 777
+
+    3- file --> 664
+       directory --> 775
+
+       umask --> change the default permission, (in the current shell only)
+
+        default --> 777 
+
+        directory --> 777 - 777 = 000 
+            umask 000 
+
+        directory --> rw => 666 
+            777 - 666 = 111
+
+            umask 111
+
+        directories --> 770  rwx rwx ---
+        777 - 770 == 007
+        rwxrwx---
+------------------------------------
+        umask --> default --> 002
+
+        directory --> 777 - 002 = 775
+        rwx rwx r-x
+-------------------------------------
+        octal --> chmod 666 
+            rw rw rw 
+        rwx rwx rwx 
+        7    7  7 
+        r 4
+        w 2
+        x 1 
+--------------------------------------
+        umask 
+
+        777 - 777 = 000
+        665
+        777 - 665 = 112 --> rw rw rx
+        rw-rw-r-x
+
+        750 ==> rwx r-x ---
+
+        umask 777 - 750 = 027 ==> rwx rx --
+        rwx r-x ---
+
+        ---------------------------
+                  rw rw r  
+        file ---> 664 
+        644 --> rw r r 
+        umask  666 - 644 = 022
+        rw-r--r--
+
+        file rx rw r 
+        564
+
+        umask ==> 666 - 564 =1 0 2
+
+        umask 102 ==> r-x rw- r--
+        file  rw-rw-r--
+
+        umask ==> 777 - 102 = 675 ==>rw rwx rx
+        rw-rwxr-x
+-------------------------------------------
+umask 077 
+    file  --> 666 - 077 == 611 --> 600 --> rw 0 0 
+    directory --> 777 - 077 == 700 ==> rwx 0 0
+---------------------------------------
+file  466 --> r rw rw 
+
+umask = 666 - 466 = 200  => r rw rw  
+r--rw-rw- 
+
+directory --> 777 - 200 => 577  --> rx rwx rwx 
+r-xrwxrwx
+
+directory --> 656 --> rw rx rw
+
+umask 777 - 656 = 121 
+umask 121 ==> rw rx rw
+rw-r-xrw-
+
+file --> 666 - 121 = 545 --> rx r rx --> rw r rw 
+
+file 666 
+    umask 666 - 666 =000
+r 4 
+w 2
+x 1
+umask 217 ==> 
+        file --> 451 -->  450 --> 460 --> r--rw----
+         6  6  6 -  ==> 450      5 ==> 4 w 
+         2  1   7
+            r rw -- 
+            r--rw----
+        directory --> 560 --> 777 - 217=> rx rw --
+        r-xrw----
+-----------------------------------------
+
+1- command mode --> default
+
+2- insert mode 
+
+3- lastline mode --> :
+
+switch from command mode to insert mode --> i 
+
+to switch insert to command --> ESC 
+
+
+operations: 
+    1- insert and append:
+        i --> insert before the cursor 
+        o --> insert text in new line  after the cursor
+        a --> append the text after the cursor 
+        A --> end line 
+        O --> open blank line before the cursor 
+        I --> the begin of the line
+
+    2- maniplating file: (command mode)
+            h --> left
+            g --> down
+            k --> up
+            l --> right
+            w --> move by word 
+            b --> back by word 
+            e --> end of the word
+            0 --> the begin of line 
+            enter --> the begin of next line 
+            G --> move to the last line 
+            5G == :5 --> move to the  line num 5
+            B --> back to first screen
+            L --> refresh page 
+        
+    3- substituation 
+            s --> delete + insert 
+            x --> delete 
+            dw --> delete word
+            dd --> delete line
+            D --> remove from the cursor to the end of line 
+            4,8d --> remove range of lines (from 4 to 8)
+            /word --> search word (forward the begin of page )
+                    n --> forward to the next word 
+                    N --> back to the previous word
+
+            ?word --> search word ( the end of page )
+
+            search and replace --> :%s/searchword/replaceword
+
+            copy ==> yy 
+            p ==> paste under the cursor
+            P ==> paste above the cursor
+
+            :2,8 co 8
+
+            undo ==> u
+
+            :x ==> save and quit
+            :wq! ==> save and quit
+            :q! ==> quit 
+
+            :set nu 
+            :set nonu
+
+            :set ic 
+            :set noic
+
+
+
+
+
+
+
+
+
+
+        

@@ -1,0 +1,81 @@
+ENV. Varaibles: 
+
+
+$HOME 
+
+echo $USER
+echo $SHELL 
+
+printenv USER 
+printenv SHELL
+
+
+/usr/sbin --> commands --> sudo (root)
+/usr/bin --> commands --> user 
+
+cd 
+pwd 
+hello.sh  
+ 
+1- My own command: 
+        1- touch file.sh 
+        2- #!/bin/bash (write your commandss)
+        3- excute permission
+        4- ./file.sh 
+           sh file.sh
+        ----------------------------
+        1- mkdir commandDir & cd commandDir
+        2- touch file
+        3- write your commands 
+        4- excute permission
+        5- PATH=$PATH:/home/user/commandDir
+        ---> touch test 
+        6- fileCommand
+        -----------------------------------
+
+        to make your command permnant: 
+
+        1- GLOBAL init. 
+                powerON
+                /etc/profile 
+                /etc/bashrc
+                
+        2- initilization files: 
+                .profile --> login 
+                .bashrc  --> new terminal 
+------------------------------------
+        1- mkdir commandDir & cd commandDir
+        2- touch file
+        3- write your commands 
+        4- excute permission
+        5-  vi ~/.bashrc 
+             --> PATH=$PATH:/home/user/commandDir
+        
+        6- fileCommand
+------------------------------------------
+Alias
+         
+-------------------------------------------
+
+process --> 
+        ps 
+        ps -f 
+        ps -e 
+        ps -f -u root 
+        top --> PID --> process ID
+                User
+                PR --> priority -->  
+        bg --> & 
+        fg --> 
+        fg --> ctrl + c --> terminate
+                ctrl+z --> stop 
+
+        bg --> kill -SIGNAL
+        kill -L --> list all signal 
+        kill -SIGKILL PID (stop process and u can't back to it)
+        kill -SIGSTOP PID (stop process and u can back to it )
+        kill -SIGCONT 
+
+        fg--> bg --> bg % PID
+        bg--> fg --> fg % PID
+        
