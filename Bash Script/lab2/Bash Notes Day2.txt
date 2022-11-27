@@ -1,0 +1,173 @@
+Terminal --> place write Commands
+shell --> interperter [translate Commands]
+	-------------------------
+human <--> Terminal <--> Shell <--> kernel 
+	------------------------
+Types of Shells :
+	bash 
+	sh 
+	ksh 
+	zsh 
+	-----------------
+	python 
+	c 
+---------------------------------------------
+list of shells 
+------------------
+cat /etc/shells
+----------------------------------------------
+Current Shells 
+---------------
+echo $SHELL or echo $0
+----------------------------------------------
+
+COmmands Type :-
+
+1) internal or Bulit-in Commands
+-----------------------------------
+2) External Commands 
+---------------------------------
+3) Alias
+-----------------------------------
+type Command_Name
+-----------------------
+type cd --> cd is a shell builtin
+type for--> for is a shell keyword
+type c -->  c is aliased to `clear'
+type cat -->/bin/
+
+-----------------------------------------------
+Type of Variables:
+--------------------------
+– Local Variables
+x=5 
+echo $x
+– Environment Variables
+HOME,USER,PS1,PS2,USER,PATH
+echo $HOME
+– Predefined Variables
+$0 ,$*,$# ,.......
+-----------------------------------------------
+\ backSlash with Echo 
+---------------------------
+1) # echo \ ==> go to PS2 :
+export PS2="\u @ PS2 : \t :"
+
+2) Disable Special Character :
+# echo "\$HOME" --> echo '$HOME'
+$HOME
+
+------------------------------------------------
+# Qouting 
+-----------------
+"" vs ''
+
+'' --> Disable All Special Characheter -->echo '$HOME'
+"" --> Enable $ , disable *,?,....
+
+ls /home/mina/dir_test/file* --> Run
+ls "/home/mina/dir_test/file*"--> Error
+	---------------- 
+touch file 1 --> two file --> file , 1
+touch "file 1" --> one file --> 'file 1'
+--------------------------------------------
+1) Local Variables 
+----------------------
+x=ls
+echo $x ---> ls
+-------------------------------------
+x=`ls` #-> Not signal Qoute ''
+echo $x
+file 1 file2 file 2 file3 file4 file5 filea fileb
+-------------------------------------
+echo $xMina   --> Empty 
+echo ${x}Mina -->5Mina
+---------------Arithmetic Opertaion -----------------------
+x=5
+y=6
+echo $x+$y --> 5+6
+z=$x+$y
+echo $z --> 5+6
+z=$((x+y))
+echo $x --> 11
+echo $((x+y)) -->11
+	----------------------
+typeset -i x=5
+typeset -i y=6
+typeset -i z
+z=$x+$y
+echo $z --> 11
+--------------------------------------
+typeset -i num="5*9"
+echo $num
+--------------------------------------
+mina=5
+echo $mina --> 5
+bash --> New Child Shell 
+echo $mina --> Empty 
+exit()-->Exit Child Shell
+echo $mina --> 5
+	---------------------------
+export --> Child inherate from Parent 
+	---------------------------
+export mina=5
+echo $mina --> 5
+bash --> New Child Shell 
+echo $mina --> 5 
+exit()-->Exit Child Shell
+echo $mina --> 5
+	---------------------------
+read --> Take Input from user 
+-------------------------------------
+read -p "Enter Your Name : "
+echo $REPLY
+read -p "Enter Your Name : " username
+echo $username
+------------------------------------------------------------------
+# Run By Sourcing [Scipt_day2.sh & file.sh  Same Shell]
+x=5
+. file2.sh
+#--------------------------------------------------------------
+#Normal Run [Scipt_day2.sh Parent Shell,  file.sh  Child Shell]
+# --------------------------------
+# export x=5  
+# ./file2.sh #run
+
+------------------------------------
+#export --> all Export variables 
+set --> all Variables Env & local 
+env --> Enviroment variables  
+-------------------------------------
+#Predefined Variables
+# ---------------------------------
+# $0,$$,$?,$#,$1,$2
+echo "File Name : " $0
+echo "All argments : " $*
+echo "All argments : " $@
+echo "Number of argments : " $#
+echo "first argment : " $1
+echo "second argment : " $2
+echo "second argment : " $2
+# echo "Process ID : " $$
+# echo $? #-->0-->Previous Process Sccesuss
+----------------------------------------------------------------------------------
+command && echo "yes" || echo "no"
+test $x = "mina" && echo "yes" || echo "no"
+[ $x = "minax" ] && echo "yes" || echo "no" #--> afte [ , = space , before ] ,= space
+[ 8 -gt 6 ]  && echo "yes" || echo "no"
+[[ 8 > 6 && 1 > 2 ]] && echo "yes" || echo "no"
+[[ -d ~/test ]] && echo "yes" || echo "no"--> yes
+[ -d ~/file ] && echo "yes" || echo "no" --> no
+[ -f ~/file ] && echo "yes" || echo "no" --> yes
+
+if [[ $# = 1 && -f $1 ]]
+then
+    cat $1
+fi
+------------------------------------------------------------------------------------
+
+
+
+
+
+

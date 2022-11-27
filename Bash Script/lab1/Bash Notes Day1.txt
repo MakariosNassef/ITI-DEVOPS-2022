@@ -1,0 +1,233 @@
+powerON --> BIOS --> Bootloader --> kernel --> Systemd/init---> App 
+-------------------------------------------------------------------
+Bootloader --> grub
+pstree 
+ps -ef  --> kernel --> PID --> 0 , init /Systemd -->PID --> 1 
+--------------------------------------------------------------------
+Ubuntu 
+-------------
+/bin--> Normal User Command Booting 
+/sbin--> Normal User Command Booting 
+		---------
+/usr/bin ---> All Normal UserCommand No Booting 
+/usr/sbin ---> All Super UserCommand No Booting 
+-----------------------------------------------------
+Centos - RedHat
+------------------
+/bin (short Cut -SoftLinK)---> /usr/bin ---> Same
+/sbin (short Cut -SoftLinK)---> /usr/sbin ---> Same
+------------------------------------------------------
+/media --> Automatic Mounting 
+/mnt --> Manual Mounting 
+----------------------------------------------------------
+Home Directory 
+cd 
+cd ~ 
+cd $HOME  
+cd /home/userLogin_Name
+-----------------------------------------------------------
+touch mina_test
+sudo chmod +x ./mina_test 
+~/Music  -->  ./mina_test 
+export PATH=$PATH:~/Music/
+>mina_test
+vi ~/.bashrc
+------------------------------------------------------------------------
+terminal --> Open from GUI --> pts --> no login Terminal
+~/.bashrc
+/etc/bashrc
+------------------------------------------------------------------------
+terminal --> Open from Server [Without GUI ]--> tty --> login Terminal
+/etc/profile ---> alias mina="clear"
+~/.bash_profile
+~/.bashrc
+/etc/bashrc
+------------------------------------------------------------------------
+echo $0 --> Current Shell 
+----------------------------------------------------------------------
+open_terminal --> 0 input , 1 output , 2 error --> file discrepitor 
+cntrl +c --> Terminate 
+cntrl +z --> Stop Process 
+cntrl +d --> Save --> 0   
+---------------------------------------------------------------------
+grep "Ahmed" ~/test 
+mina Ali Ahmed
+Ahmed Mina
+		-----------------
+grep "Ahmed$" ~/test 
+ mina Ali Ahmed
+		-----------------
+grep "^Ahmed" ~/test 
+Ahmed Mina
+		------------------
+8,10 --> head -10 /etc/passwd | tail -3
+m,n ---> head -n /etc/passwd | tail - c   #c=n-m+1
+		-----------------
+command [option ->argument] [options] [argmuent]
+Example 
+	pgrep -ul mina --> Error 
+	pgrep -lu mina [or] pgrep -u mina -l --> Correct
+		------------------
+ Terminate --> kill -15 or kill or kill -SIGTERM or cntrl+c --> Clean Kill 
+
+ Kill --> kill -9 or kill -SIGKILL --> Force  Kill
+		---------------------
+Notes :-
+-----------
+CommandName--> Small letters
+Signal , Enviroment Variables --> Capital letters , SIGKILL ,HOME,PATH
+options --> Small & Capital 
+		---------------------
+mina @  01:53:25  split_mina  :  split -10 /etc/passwd
+mina @  01:53:49  split_mina  :  ls
+xaa  xab  xac  xad  xae
+		---------------------
+mina @  01:53:25  split_mina  :  split -10 /etc/passwd file
+mina @  01:55:21  split_mina  :  ls
+fileaa  fileab  fileac  filead  fileae  
+		-----------------------
+mina @  01:53:25  split_mina  :  split -10  -d /etc/passwd file
+mina @  01:57:10  split_mina  :  ls
+file00  file01  file02  file03  file04
+		----------------------
+mina @  02:01:06  split_mina  :  split -10  -d  -a 1 /etc/passwd file
+mina @  02:01:15  split_mina  :  ls
+file0  file1  file2  file3  file4
+		----------------------
+non-Interactive -->sed --->Write without Read 
+Interactive --> See Previous Output --> Read - Write --> Vi 
+		---------------------------------
+Sed Tools :-
+-------------- 
+1) print 
+2) Delete 
+3) Edit 
+		----------------------------------
+1) Print 
+sed "" /etc/passwd --> Cat /etc/passwd
+		-------------------------------
+sed -n "/root/p" /etc/passwd --> -n deactive Default Print
+	grep "root" /etc/passwd
+	-------------------------------------------
+sed -n "/^root/p" /etc/passwd
+	grep "^root" /etc/passwd
+	---------------------------------------
+sed -n "/^root/,/^lp/p" /etc/passwd
+	----------------------------------
+sed -n "1,3p" /etc/passwd  --> head -3 /etc/passwd
+	---------------------------------
+#10 - 15 
+sed -n "10,15p" /etc/passwd ---> head -15 /etc/passwd | tail -6
+        --------------------------
+sed -n "/^root/,4p" /etc/passwd --> 
+	-------------------------
+sed -n "3! p" /etc/passwd --> All Line (Except line 3)
+	-------------------------
+2) Delete 
+-------------
+sed "3 d" ~/test 
+	------------------------
+sed "3,5 d" ~/test 
+	---------------------------
+sed "$ d" ~/test --> last Line 
+	--------------------------
+sed "5,$ d" ~/test --> from Line
+	-----------------------
+sed "/^root/,5 d" /etc/passwd 
+	--------------------------
+sed -i "3,4 d" ~/test  --> Edit Original File
+	-------------------------
+sed -e "3 d" -e "4 d" ~/test
+	------------------------
+3) Edit :- 
+----------
+sed "s/mina/monica/g" ~/test
+sed "s/lp/MinaAhmed/g" /etc/passwd
+sed "1! s/mina/monica/g" ~/test
+sed "1! s/Mina/monica/g" ~/test
+-------------------------------------------------------------
+-i --> Edit Original --> Not Recommended :)
+-----------------------------------------------------------
+				AWK 
+			----------------------
+
+
+<<Comment
+awk -F : '
+{print $0}
+' /etc/passwd
+
+#loop 
+#Begin(init_Befor Loop) 
+#while(){body}
+#(End_After_LOOP) 
+ 
+awk '
+	BEGIN{FS=":";print "Begin"} 
+	{print $1,"---",$5}
+	END{print "End"}
+' /etc/passwd
+awk '
+	BEGIN{FS=":";print "Begin"} 
+	{print NR,"-",$0}
+	END{print "End"}
+' /etc/passwd
+
+awk '
+	BEGIN{FS=":";print "Begin"} 
+	{
+		if(NR >=5 && NR <=10){
+			print NR,"---",$0
+		}
+	}
+	END{print "End"}
+' /etc/passwd
+
+awk '
+	BEGIN{FS=":";print "Begin"} 
+	{
+		if($3 >=1000 ){
+			print NR,"---",$1,$3
+		}
+	}
+	END{print "End"}
+' /etc/passwd
+Comment
+awk '
+	BEGIN{FS=":";print "Begin"} 
+	{
+		
+	}
+	END{print "End"}
+' /etc/passwd
+	-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
