@@ -1,10 +1,15 @@
-***creat database and tables**
-1- CREATE DATABASE lab_sql;
-2- CREATE TABLE student ( id INT PRIMARY KEY, name VARCHAR(50), email VARCHAR(50) UNIQUE, phone INT);
-3- CREATE TABLE subject ( id INT PRIMARY KEY, name VARCHAR(50), sub_desc VARCHAR(50), max_score INT);
-4-CREATE TABLE exam ( id INT PRIMARY KEY, 
+student (#id, name, email, phone)
+subject (#id, name, sub_desc, max_score)
+exam (#id, date)
+stu_subjects (#stu_id, #sub_id)
+stu_grades (#stu_id, #sub_id, #exam_id, grade)
+
+-->CREATE DATABASE lab_sql;
+-->CREATE TABLE student ( id INT PRIMARY KEY, name VARCHAR(50), email VARCHAR(50) UNIQUE, phone INT);
+-->CREATE TABLE subject ( id INT PRIMARY KEY, name VARCHAR(50), sub_desc VARCHAR(50), max_score INT);
+-->CREATE TABLE exam ( id INT PRIMARY KEY, 
                       date DATE);
-5-CREATE TABLE stu_grades ( stu_id INT,
+-->CREATE TABLE stu_grades ( stu_id INT,
                             sub_id int, 
                             exam_id int, 
                             grade int, 
@@ -12,12 +17,18 @@
 
 -----------------------------------------------------------------------------------------------------
 1- Add gender column for the student table. It holds two values (male or female)
-   ***ALTER TABLE student ADD COLUMN gender ENUM('male','female');***
+   ALTER TABLE student ADD COLUMN gender ENUM('male','female');
+
 2- Insert your classmates’ data (3 rows for each table)
+   INSERT INTO student VALUE(5,'nana','nana@gmail',012222,'female');
+   ...
+   ...
 3- Add birth date column for the student table
-4- Add foreign key constrains in Your Tables with options on
-  delete cascaded.
+    
+4- Add foreign key constrains in Your Tables with options on delete cascaded.
+   
 5- Display all students’ information.
+   
 6- Display the number of males and females.
 7- Display male students who are born before 1991-10-01
 8- Display students’ names that begin with A
