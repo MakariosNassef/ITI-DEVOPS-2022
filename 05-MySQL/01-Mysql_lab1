@@ -1,0 +1,11 @@
+***creat database and tables***
+1- CREATE DATABASE lab_sql;
+2- CREATE TABLE student ( id INT PRIMARY KEY, name VARCHAR(50), email VARCHAR(50) UNIQUE, phone INT);
+3- CREATE TABLE subject ( id INT PRIMARY KEY, name VARCHAR(50), sub_desc VARCHAR(50), max_score INT);
+4-CREATE TABLE exam ( id INT PRIMARY KEY, 
+                      date DATE);
+5-CREATE TABLE stu_grades ( stu_id INT,
+                            sub_id int, 
+                            exam_id int, 
+                            grade int, 
+                            PRIMARY KEY(stu_id,sub_id,exam_id));
