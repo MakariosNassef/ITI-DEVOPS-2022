@@ -21,19 +21,47 @@ stu_grades (#stu_id, #sub_id, #exam_id, grade)
 
 2- Insert your classmates’ data (3 rows for each table)
    INSERT INTO student VALUE(5,'nana','nana@gmail',012222,'female');
-   ...
-   ...
+   INSERT INTO subject VALUE(1,'sql','mysql',100);
+   INSERT INTO exam VALUE(3,'2022-11-29');
+   INSERT INTO stu_grades VALUE(1,2,3,20);
+   
 3- Add birth date column for the student table
-    
+   ALTER TABLE student ADD COLUMN birtdate DATE;
+   
 4- Add foreign key constrains in Your Tables with options on delete cascaded.
-   
+   alter table stu_grades add CONSTRAINT mac1 FOREIGN KEY(stu_id) REFERENCES exam(id) ON DELETE CASCADE;
+   alter table stu_grades add CONSTRAINT mac14 FOREIGN KEY(sub_id) REFERENCES exam(id) ON DELETE CASCADE;
+   alter table stu_grades add CONSTRAINT mac12 FOREIGN KEY(exam_id) REFERENCES exam(id) ON DELETE CASCADE;
+   alter table stu_subjects add CONSTRAINT mac13 FOREIGN KEY(stu_id) REFERENCES exam(id) ON DELETE CASCADE;
+   alter table stu_subjects add CONSTRAINT mac13 FOREIGN KEY(sub_id) REFERENCES exam(id) ON DELETE CASCADE;
+      
 5- Display all students’ information.
-   
+ SELECT * FROM student;
++----+------------+---------------+------------+--------+
+| id | name       | email         | phone      | gender |
++----+------------+---------------+------------+--------+
+|  1 | mac        | mac@gmail     | 1206330662 | male   |
+|  2 | ahmed      | ahmed@gmail   |      12222 | male   |
+|  3 | noha ahmed | noha@gmail    |      12222 | male   |
+|  4 | mahmoud    | mahmoud@gmail |      12222 | male   |
+|  5 | nana       | nana@gmail    |      12222 | female |
++----+------------+---------------+------------+--------+
+
 6- Display the number of males and females.
+   SELECT count*,gendar FROM student group by gender;
+   
 7- Display male students who are born before 1991-10-01
+   SELECT * FROM student WHERE gender = 'male' and birth_date < '1991-10-01';
+
 8- Display students’ names that begin with A
-9- Display the repeated first names and their counts if higher
-  than 2
-10- Display students’ names, their score and subject name.
-11- Create view to store students’ name with their subjects’
-  names.
+   SELECT name FROM student WHERE name LIKE 'A%'
+
+9- Display the repeated first names and their counts if higher than 2
+   SELECT name , count(name) AS count FROM student group by name having count > 2;
+   
+10-Display students’ names, their score and subject name.
+   SELECT s.name, sub.name, g.grade FROM student s, subject sub, stu_grades g WHERE s.id = g.stu_id AND sub.subID = g.sub_id;
+
+11-Create view to store students’ name with their subjects’ names.
+   CREATE view vi AS SELECT s.name, sub.name FROM student s, subject sub, stu_subjects ss WHERE s.id = ss.stu_id AND sub.subID = ss.sub_ID;
+    
