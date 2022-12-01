@@ -1,0 +1,78 @@
+1. Display the date of exam as the following: day 'month name' year.
+SELECT DATE_FORMAT(`date`,'%M %Y') AS showdate FROM exam
+
+2. Display name and age of each student.
+select name,
+date_format(from_days(datediff(now(),birtdate)),'%Y')+0 
+as Age 
+from student;
+
+3. Display the name of students with their rounded score in each exam.
+select s.name,
+SG.exam_id, round(sg.grade) 
+as 'score' 
+from student s left join stu_grades SG 
+on s.id=sg.stu_id;
+
+4. Display the name of students with the year of birthdate.
+select name,
+date_format(birtdate, '%Y') 
+as 'year'
+from student;
+
+5. Create hello world function which take username and return welcome message to user using his name.
+create function say_hallo(name varchar(50)) 
+returns varchar(25) 
+no sql
+begin
+return concat('Hello ', name); 
+end /
+select say_hallo('Makarios') /
+
+6. Create multiply function which take two number and return the multiply of them.
+create function multiply(n1 int, n2 int) 
+returns int deterministic 
+begin
+return n1*n2; 
+end /
+select multiply(5,2) /
+
+
+7. Create function which takes student id and exam id and return score the student in exam.
+create function score(val1 int, val2) returns int reads sql data 
+begin 
+return (select stgr.grade from student s inner join stu_grades
+stgr on s.id = stgr.stu_id inner join exam ex on ex.exID = stgr.exam_id
+where s.id = val1 and ex.exID = val2); 
+end /
+select score(1,1) /
+
+8. Create function which take subject name and return the max grade for subject.
+create function getmaxscore(in_name varchar(50)) 
+returns int reads sql data 
+begin 
+return (select max_score from subject where name =
+in_name); 
+end /
+SELECT getmaxscore('Math') /
+
+9. Create Table called deleted_students which will hold the deleted students’ info (same columns as in student tables)
+create table deleted_students like student;
+
+10.Create trigger to save the deleted student from Student table to deleted_students.
+create trigger deleted_students 
+before delete 
+on student for each row 
+begin 
+insert into deleted_students 
+values(old.id, old.name, old.email, old.phone, old.gender, old.birth_date); 
+end/
+
+11.Create trigger to save the newly added students to student table to backup_students
+create trigger students_backup
+after insert
+on student for each row 
+begin
+insert into students_backup 
+values(new.id, new.name, new.email, new.phone, new.gender, new.birth_date);
+end/
