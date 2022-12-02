@@ -1,0 +1,28 @@
+1-Install Apache HTTP server Create two simple html pages named “page1.html, page2.html” then use the suitable directive to automatically redirect from localhost/page1.html to localhost/page2.html.
+-->Redirect /index.html /page2.html
+
+2-Ask for username and password when accessing a directory.
+-->sudo htpasswd -c .htpasswd  makar
+
+<Directory /var/www/html/makarpass>
+        AuthType Basic
+        AuthName "Restricted web page"
+        AuthUserFile "/var/www/html/.htpasswd"
+        require valid-user
+</Directory>
+
+
+3-Create a directory then allow access to one of your classmates only.
+<Directory /var/www/html/makarpass>
+    Deny from all
+    Allow from 192.168.1.10
+</Directory>
+
+4-Disable listing the directory content (hint use indexes).
+<Directory /var/www/html/makarpass>
+    Options -Indexes
+</Directory>
+
+5-Change the default index page to be default.html instead of index.html
+DirectoryIndex  default.html
+
