@@ -1,0 +1,35 @@
+## Task01
+
+Crowd-Funding console app
+Crowdfunding is the practice of funding a project or venture by raising small
+amounts of money from a large number of people, typically via the Internet.
+Crowdfunding is a form of crowdsourcing and alternative finance. In 2015,
+over US$34 billion was raised worldwide by crowdfunding. (From Wikipedia)
+The aim of the project: Create a console app to start fundraise projects.
+The app should include the following features:
+1 - Authentication System:
+• Registration:
+• First name
+• Last name
+• Email
+• Password
+• Confirm password
+• Mobile phone [validated against Egyptian phone numbers]
+• Login
+• The user should be able to login after activation using his email and password
+
+######################################
+Task02
+A Queue is a linear structure which follows a particular order in which the operations are performed.
+The order is First In First Out (FIFO). A good example of a queue is any queue of consumers for a
+resource where the consumer that came first is served first.
+1 - We need to implement a python class that represents the queue data
+structure.
+The class should have these operations:
+
+- insert(value) => which inserts a new value at the rear of the queue
+- pop() => which returns and removes a value from the front of the queue.
+  We should return None and print a warning message if we tried to pop
+  value from an empty queue
+- is_empty() => which returns True or False to represent whether the queue
+  is empty or not.
