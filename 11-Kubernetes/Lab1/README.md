@@ -55,12 +55,13 @@ The ImagePullBackOff error occurs when the image path is incorrect, the network 
 
 
 ### 12- Now change the image on this pod to redis.
-Once done, the pod should be in a running state.
-
+     - Once done, the pod should be in a running state.
+![image](https://user-images.githubusercontent.com/28235504/210169389-635a5ba8-fd11-4f1c-91a5-e38aa02169a0.png)
 
 
 ### 13- Create a pod called my-pod of image nginx:alpine
-
-
+![image](https://user-images.githubusercontent.com/28235504/210169434-48425c58-d17b-425c-b04e-352f5e2d854e.png)
 
 ### 14- Delete the pod called my-pod
+![image](https://user-images.githubusercontent.com/28235504/210169444-00c70118-3fb1-4ecf-b0e6-8d4f09f613ce.png)
+
