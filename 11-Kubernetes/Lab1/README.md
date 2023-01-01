@@ -29,21 +29,28 @@
 
 
 ### 7- What images are used in the new webapp pod?
+    -  nginx
+    -  agentx
+
 ![image](https://user-images.githubusercontent.com/28235504/210168814-f45fbb98-7c74-469c-9778-3109f358a462.png)
-    - 1- nginx
-    - 2- agentx
+
     
 ### 8- What is the state of the container agentx in the pod webapp
+     - waiting
+![image](https://user-images.githubusercontent.com/28235504/210168923-3ff9833c-84ad-40b7-b4d0-3678fed4b045.png)
 
 
 ### 9- Why do you think the container agentx in pod webapp is in error?
-
+The ImagePullBackOff error occurs when the image path is incorrect, the network fails, or the kubelet does not succeed in authenticating with the container registry.
 
 ### 10- Delete the webapp Pod.
+![image](https://user-images.githubusercontent.com/28235504/210169175-85040171-16bc-4cca-982b-dbe90ef2ea15.png)
+
 
 ### 11- Create a new pod with the name redis and with the image redis123.
-Name: redis
-Image Name: redis123
+     - Name: redis
+     - Image Name: redis123
+![image](https://user-images.githubusercontent.com/28235504/210169249-39e4a480-4981-469b-99a5-c31802df0d0a.png)
 
 
 
