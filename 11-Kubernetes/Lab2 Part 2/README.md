@@ -38,5 +38,4 @@
 
 ### 13-There is an issue with the file, so try to fix it.and correct the value of kind.
 - ![image](https://user-images.githubusercontent.com/28235504/210231815-5ce1ebc6-2adf-4f40-bfab-1d8b9d43206a.png)
-- ![image](https://user-images.githubusercontent.com/28235504/210231473-fbca5892-c512-4777-baa1-10d![Uploading image.png…]()
-36c73b4f1.png)
+- ![image](https://user-images.githubusercontent.com/28235504/210231473-fbca5892-c512-4777-baa1-10d![Uploading image.png…]()36c73b4f1.png)
