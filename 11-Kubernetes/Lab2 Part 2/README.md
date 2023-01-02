@@ -34,7 +34,7 @@
 - repository does not exist or the image not found
 
 ### 12-Create a new Deployment using the below yaml 
-- 
+- ![image](https://user-images.githubusercontent.com/28235504/210230414-b6e5fafc-79c4-4795-9f6b-d7e5efe5c5ee.png)
 
 ### 13-There is an issue with the file, so try to fix it.and correct the value of kind.
-- 
+- ![image](https://user-images.githubusercontent.com/28235504/210231473-fbca5892-c512-4777-baa1-10d36c73b4f1.png)
