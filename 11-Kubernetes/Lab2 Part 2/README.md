@@ -31,7 +31,10 @@
 - ![image](https://user-images.githubusercontent.com/28235504/210228858-84b12dc4-60fe-42fc-ae60-142dddf05c1c.png)
 
 ### 11-Why do you think the deployment is not ready?
+- repository does not exist or the image not found
 
 ### 12-Create a new Deployment using the below yaml 
+- 
 
 ### 13-There is an issue with the file, so try to fix it.and correct the value of kind.
+- 
