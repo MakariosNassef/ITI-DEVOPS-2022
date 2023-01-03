@@ -27,15 +27,10 @@
  - ![image](https://user-images.githubusercontent.com/28235504/210344561-ac7a14c2-d2f3-47e8-8c7b-46e6f64f8236.png)
 
 ### 7-What is the image used to create the pods in the deployment?
- - command : $ kubectl get deployment simple-webapp-deployment -o yaml
+ - command : $ kubectl get deployment simple-webapp-deployment -o yaml or $ kubectl describe deployment simple-webapp-deployment 
  - image: kodekloud/simple-webapp:red
 
 ### 8-Create a new service to access the web application using the the below 
+- ![image](https://user-images.githubusercontent.com/28235504/210350177-3ea35035-1635-4ae8-bbe1-e6c1ee8f11f5.png)
+- ![image](https://user-images.githubusercontent.com/28235504/210350457-c2428fb3-e4fd-4ce0-8989-19f64cbfd6af.png)
 
-Name: webapp-service
-Type: NodePort
-targetPort: 8080
-port: 8080
-nodePort: 30080
-selector:
-  name: simple-webapp
