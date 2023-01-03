@@ -19,40 +19,16 @@
 
 ### 5-How many Endpoints are attached on the kubernetes service?
  - By default, the control plane creates and manages EndpointSlices to have no more than 100 endpoints each. You can configure this with the --max-endpoints-per-slice kube-controller-manager flag, up to a maximum of 1000.
- - Endpoint : objects that represent the network addresses of the pods that the service is exposing. The number of Endpoints that are attached to a Service depends on the number of pods that are selected by the Service's label selector and the availability of those pods.
+ - Endpoint : objects that represent the network addresses of the pods that the service is exposing. 
+ - The number of Endpoints that are attached to a Service depends on the number of pods that are selected by the Service's label selector and the availability of those pods.
 
-### 6-Create a Deployment using the below yaml
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: simple-webapp-deployment
-  namespace: default
-spec:
-  replicas: 4
-  selector:
-    matchLabels:
-      name: simple-webapp
-  strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
-  template:
-    metadata:
-      creationTimestamp: null
-      labels:
-        name: simple-webapp
-    spec:
-      containers:
-      - image: kodekloud/simple-webapp:red
-        imagePullPolicy: IfNotPresent
-        name: simple-webapp
-        ports:
-        - containerPort: 8080
-          protocol: TCP
+### 6-Create a Deployment using the below yaml.
+ - ![image](https://user-images.githubusercontent.com/28235504/210343655-f7804c56-0313-4d75-9e91-f41aa5b29d78.png)
+ - ![image](https://user-images.githubusercontent.com/28235504/210344561-ac7a14c2-d2f3-47e8-8c7b-46e6f64f8236.png)
 
 ### 7-What is the image used to create the pods in the deployment?
+ - command : $ kubectl get deployment simple-webapp-deployment -o yaml
+ - image: kodekloud/simple-webapp:red
 
 ### 8-Create a new service to access the web application using the the below 
 
