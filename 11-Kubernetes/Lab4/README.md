@@ -24,7 +24,9 @@
 ![image](https://user-images.githubusercontent.com/28235504/210541493-84dc893b-937f-4599-940b-215a1c2a34f7.png)
 <pre>Avilable</pre>
 
-
 ### 7- Why is the claim not bound to the available Persistent Volume?
+Access model mismatch
 
 ### 8- Update the Access Mode on the claim to bind it to the PV?
+![image](https://user-images.githubusercontent.com/28235504/210541493-84dc893b-937f-4599-940b-215a1c2a34f7.png)
+
