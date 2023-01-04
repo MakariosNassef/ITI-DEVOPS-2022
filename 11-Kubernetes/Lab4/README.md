@@ -3,7 +3,6 @@
 
 ### 1-create pod from the below yaml file
 ![image](https://user-images.githubusercontent.com/28235504/210533573-48c66e8b-a4a0-4743-8f8f-8f9e460eef3f.png)
-![image](https://user-images.githubusercontent.com/28235504/210536115-94156eb5-9b43-45d1-9f6e-24f636af5aa3.png)
 
 ### 2-Configure a volume to store these logs at /var/log/webapp on the host.
 ![image](https://user-images.githubusercontent.com/28235504/210539990-4c312793-da39-415d-aa3b-1051b8845310.png)
@@ -19,9 +18,12 @@
 
 ### 5- What is the state of the Persistent Volume Claim?
 ![image](https://user-images.githubusercontent.com/28235504/210541053-35d6df38-0ec7-45f4-802b-9dd975a846a5.png)
-
+<pre>Bound</pre>
 
 ### 6- What is the state of the Persistent Volume?
+![image](https://user-images.githubusercontent.com/28235504/210541493-84dc893b-937f-4599-940b-215a1c2a34f7.png)
+<pre>Avilable</pre>
+
 
 ### 7- Why is the claim not bound to the available Persistent Volume?
 
