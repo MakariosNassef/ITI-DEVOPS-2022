@@ -1,4 +1,7 @@
 # lab-2 Terraform
+![lab2](https://user-images.githubusercontent.com/28235504/212475769-efa170a0-1d34-4ce5-845a-141c51eeea2a.png)
+
+
 ### instances public and privte
 ![image](https://user-images.githubusercontent.com/28235504/212475512-dd1169ba-ce9c-4daa-adb6-cc9064d045b3.png)
 
