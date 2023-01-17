@@ -50,10 +50,11 @@
 
 ### 5. Using gcloud,
 I. List all roles on your project.
- - ```gcloud iam roles list ```
+ - ```gcloud iam roles list --project=iti-makarios```
 
 II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
- - ```gcloud iam roles describe CustomRole --project=my-custom-role-1```
+ - ```gcloud iam roles describe mycustomrole1 --project=my-iti-makarios```
+ - ![image](https://user-images.githubusercontent.com/28235504/212980105-6758aa67-b808-4b24-8dd7-425249dc525d.png)
 
 III. Describe the custom role "my-custom-role-1" and view its details & permissions.
  - ```gcloud iam roles describe roles/my-custom-role-1```
