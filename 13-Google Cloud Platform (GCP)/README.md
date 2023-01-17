@@ -8,8 +8,9 @@
 ### 3. Create a GCP project.
 ![image](https://user-images.githubusercontent.com/28235504/212908838-546ae14d-41f0-43d8-95e0-f673cf98185e.png)
 ### 4. Assign your billing account to your project.
-
+- ![image](https://user-images.githubusercontent.com/28235504/212919596-dc321d09-cdda-482c-a489-540c7967a65b.png)
 ### 5. Setup project budget.
+- ![image](https://user-images.githubusercontent.com/28235504/212920249-906a45cb-10e6-4543-afaa-586331fde573.png)
 
 ### 6. Setup billing alerts.
 
