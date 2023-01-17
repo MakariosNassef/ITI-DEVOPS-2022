@@ -9,7 +9,15 @@
 
 # Lab 1.2
 1. From Cloud console, do the following:
-I. Create custom rolenamed "my-custom-role-1" withthe following permissions only:–Iam.roles.get–Iam.roles.list2.From Cloud console, Explore primitive and pre-defined roles and theirpermissions.3.From Cloud console, Create a service account with id "my-first-serviceaccount".4.From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"5.Using gcloud,I.List all roles on your project.II.Describe the predefined role "roles/compute.viewer" and view itsdetails & permissionsIII.Describe the custom role "my-custom-role-1" and view its details & permissions.IV.List all authenticated accounts.V.Activate the service account "my-first-serviceaccount".
-VI. List all authenticated accounts again.
-VII. Using this service account, try to list all roles on your project.
-VIII. Try to delete custom role "my-custom-role-1"
+I. Create custom rolenamed "my-custom-role-1" withthe following permissions only:–Iam.roles.get–Iam.roles.list
+2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
+3. From Cloud console, Create a service account with id "my-first-serviceaccount".
+4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
+5. Using gcloud,
+- I. List all roles on your project.
+- II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
+- III. Describe the custom role "my-custom-role-1" and view its details & permissions.
+- IV. List all authenticated accounts.V.Activate the service account "my-first-serviceaccount".
+- VI. List all authenticated accounts again.
+- VII. Using this service account, try to list all roles on your project.
+- VIII. Try to delete custom role "my-custom-role-1"
