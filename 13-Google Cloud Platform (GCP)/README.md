@@ -34,7 +34,11 @@
 -  ![image](https://user-images.githubusercontent.com/28235504/212925801-e968beb5-5ef3-4c4d-bb96-705f01c1d065.png)
 
 ### 2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
+``` gcloud iam list-grantable-roles //cloudresourcemanager.googleapis.com/projects/iti-makarios ```
 ### 3. From Cloud console, Create a service account with id "my-first-serviceaccount".
+- ``` gcloud iam service-accounts create my-first-serviceaccount ``` 
+- ![image](https://user-images.githubusercontent.com/28235504/212929518-b731aed1-0e9e-4726-b721-1216d00aa269.png)
+
 ### 4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
 ### 5. Using gcloud,
 - I. List all roles on your project.
