@@ -41,17 +41,23 @@
 
 ### 4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
 ### 5. Using gcloud,
-- I. List all roles on your project.
-- II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
-- III. Describe the custom role "my-custom-role-1" and view its details & permissions.
-- IV. List all authenticated accounts.V.Activate the service account "my-first-serviceaccount".
+I. List all roles on your project.
+- ``` gcloud iam roles list ```
+II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
+- ``` gcloud iam roles describe roles/compute.viewer ```
+III. Describe the custom role "my-custom-role-1" and view its details & permissions.
+- ``` ```
+- IV. List all authenticated accounts.
+- ``` gcloud auth list ```
+- V.Activate the service account "my-first-serviceaccount".
+- ```  ```
 - VI. List all authenticated accounts again.
+- ``` ```
 - VII. Using this service account, try to list all roles on your project.
+- ``` ```
 - VIII. Try to delete custom role "my-custom-role-1"
-1. gcloud iam roles list
-2. gcloud iam roles describe roles/compute.viewer
+- ``` gcloud iam roles delete my-custom-role-1 ```
+ 
 3. gcloud iam roles describe my-custom-role-1
-4. gcloud auth list
 5. gcloud auth activate-service-account my-first-serviceaccount --key-file=my_key_file.json
 6. gcloud auth list
-7. gcloud iam roles delete my-custom-role-1
