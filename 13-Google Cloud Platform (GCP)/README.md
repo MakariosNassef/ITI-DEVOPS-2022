@@ -8,11 +8,17 @@
 ### 3. Create a GCP project.
 ![image](https://user-images.githubusercontent.com/28235504/212908838-546ae14d-41f0-43d8-95e0-f673cf98185e.png)
 ### 4. Assign your billing account to your project.
+
 ### 5. Setup project budget.
+
 ### 6. Setup billing alerts.
+
 ### 7. Using cloud shell, list all projects and set default project.
+
 ### 8. Install and configuregcloud SDK on your pc.
+
 ### 9. List all projects using gcloudSDK and set default project.
+
 
 # Lab 1.2
 ### 1. From Cloud console, do the following:
