@@ -48,3 +48,10 @@
 - VI. List all authenticated accounts again.
 - VII. Using this service account, try to list all roles on your project.
 - VIII. Try to delete custom role "my-custom-role-1"
+1. gcloud iam roles list
+2. gcloud iam roles describe roles/compute.viewer
+3. gcloud iam roles describe my-custom-role-1
+4. gcloud auth list
+5. gcloud auth activate-service-account my-first-serviceaccount --key-file=my_key_file.json
+6. gcloud auth list
+7. gcloud iam roles delete my-custom-role-1
