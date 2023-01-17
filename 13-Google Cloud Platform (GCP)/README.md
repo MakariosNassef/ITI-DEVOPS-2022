@@ -13,10 +13,13 @@
 - ![image](https://user-images.githubusercontent.com/28235504/212920249-906a45cb-10e6-4543-afaa-586331fde573.png)
 
 ### 6. Setup billing alerts.
+- I have limited views of cost data and the Billing section; I can only see cost data for the project selected when you entered Billing.
 
 ### 7. Using cloud shell, list all projects and set default project.
+- ![image](https://user-images.githubusercontent.com/28235504/212922196-26de82c7-347a-4b18-83d7-569c2ba2d489.png)
 
-### 8. Install and configuregcloud SDK on your pc.
+### 8. Install and configure gcloud SDK on your pc.
+- ![image](https://user-images.githubusercontent.com/28235504/212922491-e1a9301d-e4b3-4247-bd2c-c073b6c97258.png)
 
 ### 9. List all projects using gcloudSDK and set default project.
 
