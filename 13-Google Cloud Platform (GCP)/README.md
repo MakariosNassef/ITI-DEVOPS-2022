@@ -30,8 +30,8 @@
  –Iam.roles.get
  –Iam.roles.list
 
-``` gcloud iam roles create mycustomrole1 --project iti-makarios --title "my-custom-role-1" --permissions iam.roles.get,iam.roles.list```
- ![image](https://user-images.githubusercontent.com/28235504/212925801-e968beb5-5ef3-4c4d-bb96-705f01c1d065.png)
+- ``` gcloud iam roles create mycustomrole1 --project iti-makarios --title "my-custom-role-1" --permissions iam.roles.get,iam.roles.list```
+-  ![image](https://user-images.githubusercontent.com/28235504/212925801-e968beb5-5ef3-4c4d-bb96-705f01c1d065.png)
 
 ### 2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
 ### 3. From Cloud console, Create a service account with id "my-first-serviceaccount".
