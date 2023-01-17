@@ -26,9 +26,13 @@
 
 # Lab 1.2
 ### 1. From Cloud console, do the following:
-- I. Create custom rolenamed "my-custom-role-1" withthe following permissions only:
+- I. Create custom role named "my-custom-role-1" with the following permissions only:
  –Iam.roles.get
  –Iam.roles.list
+``` gcloud iam roles create mycustomrole1 --project iti-makarios --title "my-custom-role-1" --permissions iam.roles.get,iam.roles.list```
+ ![image](https://user-images.githubusercontent.com/28235504/212925801-e968beb5-5ef3-4c4d-bb96-705f01c1d065.png)
+
+gcloud iam roles create my-custom-role-1 --project [iti-makarios] --title "my-custom-role-1" --permissions iam.roles.get,iam.roles.list
 ### 2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
 ### 3. From Cloud console, Create a service account with id "my-first-serviceaccount".
 ### 4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
