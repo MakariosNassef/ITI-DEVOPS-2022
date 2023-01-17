@@ -9,7 +9,9 @@
 
 # Lab 1.2
 1. From Cloud console, do the following:
-I. Create custom rolenamed "my-custom-role-1" withthe following permissions only:–Iam.roles.get–Iam.roles.list
+- I. Create custom rolenamed "my-custom-role-1" withthe following permissions only:
+ –Iam.roles.get
+ –Iam.roles.list
 2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
 3. From Cloud console, Create a service account with id "my-first-serviceaccount".
 4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
