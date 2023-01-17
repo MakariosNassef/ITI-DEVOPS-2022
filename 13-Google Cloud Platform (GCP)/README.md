@@ -53,7 +53,7 @@ I. List all roles on your project.
  - ```gcloud iam roles list ```
 
 II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
- - ```gcloud iam roles describe roles/compute.viewer ```
+ - ```gcloud iam roles describe CustomRole --project=my-custom-role-1```
 
 III. Describe the custom role "my-custom-role-1" and view its details & permissions.
  - ```gcloud iam roles describe roles/my-custom-role-1```
