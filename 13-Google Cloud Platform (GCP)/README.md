@@ -1,21 +1,28 @@
 # Lab 1.1
-1. Explore Google Cloud Console.
-2. Setup a billing method on your google account.
-3. Create a GCP project.
-4. Assign your billing account to your project.5.Setup project budget.
-6. Setup billing alerts.7.Using cloud shell, list all projects and set default project.
-8. Install and configuregcloud SDK on your pc.
-9. List all projects using gcloudSDK and set default project.
+### 1. Explore Google Cloud Console.
+- ![image](https://user-images.githubusercontent.com/28235504/212914820-da0d4e6e-079f-4215-91be-447b86ed15e0.png)
+
+### 2. Setup a billing method on your google account.
+- ![image](https://user-images.githubusercontent.com/28235504/212909915-751793c8-27b0-4ec7-a6be-3fc1c0b56255.png)
+
+### 3. Create a GCP project.
+![image](https://user-images.githubusercontent.com/28235504/212908838-546ae14d-41f0-43d8-95e0-f673cf98185e.png)
+### 4. Assign your billing account to your project.
+### 5. Setup project budget.
+### 6. Setup billing alerts.
+### 7. Using cloud shell, list all projects and set default project.
+### 8. Install and configuregcloud SDK on your pc.
+### 9. List all projects using gcloudSDK and set default project.
 
 # Lab 1.2
-1. From Cloud console, do the following:
+### 1. From Cloud console, do the following:
 - I. Create custom rolenamed "my-custom-role-1" withthe following permissions only:
  –Iam.roles.get
  –Iam.roles.list
-2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
-3. From Cloud console, Create a service account with id "my-first-serviceaccount".
-4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
-5. Using gcloud,
+### 2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
+### 3. From Cloud console, Create a service account with id "my-first-serviceaccount".
+### 4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
+### 5. Using gcloud,
 - I. List all roles on your project.
 - II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
 - III. Describe the custom role "my-custom-role-1" and view its details & permissions.
