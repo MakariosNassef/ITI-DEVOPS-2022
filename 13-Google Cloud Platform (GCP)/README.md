@@ -16,13 +16,13 @@
 - I have limited views of cost data and the Billing section; I can only see cost data for the project selected when you entered Billing.
 
 ### 7. Using cloud shell, list all projects and set default project.
-- ![image](https://user-images.githubusercontent.com/28235504/212922196-26de82c7-347a-4b18-83d7-569c2ba2d489.png)
+- ![image](https://user-images.githubusercontent.com/28235504/212924003-cc554eb1-5a1a-4146-8535-503881108dc9.png)
 
 ### 8. Install and configure gcloud SDK on your pc.
 - ![image](https://user-images.githubusercontent.com/28235504/212922491-e1a9301d-e4b3-4247-bd2c-c073b6c97258.png)
 
-### 9. List all projects using gcloudSDK and set default project.
-
+### 9. List all projects using gcloud SDK and set default project.
+- ![image](https://user-images.githubusercontent.com/28235504/212922196-26de82c7-347a-4b18-83d7-569c2ba2d489.png)
 
 # Lab 1.2
 ### 1. From Cloud console, do the following:
