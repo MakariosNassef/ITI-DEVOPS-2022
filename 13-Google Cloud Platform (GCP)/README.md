@@ -29,35 +29,43 @@
 - I. Create custom role named "my-custom-role-1" with the following permissions only:
  –Iam.roles.get
  –Iam.roles.list
+- ![image](https://user-images.githubusercontent.com/28235504/212944042-e73d632b-3b46-4457-9782-c1d9b2f0a2e0.png)
 
-- ``` gcloud iam roles create mycustomrole1 --project iti-makarios --title "my-custom-role-1" --permissions iam.roles.get,iam.roles.list```
+- ```gcloud iam roles create mycustomrole1 --project iti-makarios --title "my-custom-role-1" --permissions iam.roles.get,iam.roles.list```
 -  ![image](https://user-images.githubusercontent.com/28235504/212925801-e968beb5-5ef3-4c4d-bb96-705f01c1d065.png)
 
-### 2. From Cloud console, Explore primitive and pre-defined roles and theirpermissions.
-``` gcloud iam list-grantable-roles //cloudresourcemanager.googleapis.com/projects/iti-makarios ```
+### 2. From Cloud console, Explore primitive and pre-defined roles and their permissions.
+```gcloud iam list-grantable-roles //cloudresourcemanager.googleapis.com/projects/iti-makarios ```
 ### 3. From Cloud console, Create a service account with id "my-first-serviceaccount".
-- ``` gcloud iam service-accounts create my-first-serviceaccount ``` 
+- ```gcloud iam service-accounts create my-first-serviceaccount ``` 
 - ![image](https://user-images.githubusercontent.com/28235504/212929518-b731aed1-0e9e-4726-b721-1216d00aa269.png)
 
 ### 4. From Cloud console, Assign the custom role "my-custom-role-1"to the service account"my-first-serviceaccount"
+
 ### 5. Using gcloud,
 I. List all roles on your project.
-- ``` gcloud iam roles list ```
+- ```gcloud iam roles list ```
+
 II. Describe the predefined role "roles/compute.viewer" and view itsdetails & permissions
-- ``` gcloud iam roles describe roles/compute.viewer ```
+- ```gcloud iam roles describe roles/compute.viewer ```
+
 III. Describe the custom role "my-custom-role-1" and view its details & permissions.
+- ```gcloud iam roles describe roles/my-custom-role-1```
+
+IV. List all authenticated accounts.
+- ```gcloud auth list ```
+
+V.Activate the service account "my-first-serviceaccount".
+- ```gcloud auth activate-service-account my-first-serviceaccount --key-file=key_file.json```
+
+VI. List all authenticated accounts again.
 - ``` ```
-- IV. List all authenticated accounts.
-- ``` gcloud auth list ```
-- V.Activate the service account "my-first-serviceaccount".
-- ```  ```
-- VI. List all authenticated accounts again.
+
+VII. Using this service account, try to list all roles on your project.
 - ``` ```
-- VII. Using this service account, try to list all roles on your project.
-- ``` ```
-- VIII. Try to delete custom role "my-custom-role-1"
+
+VIII. Try to delete custom role "my-custom-role-1"
 - ``` gcloud iam roles delete my-custom-role-1 ```
  
 3. gcloud iam roles describe my-custom-role-1
-5. gcloud auth activate-service-account my-first-serviceaccount --key-file=my_key_file.json
-6. gcloud auth list
+5. 
