@@ -21,10 +21,11 @@
    - ![image](https://user-images.githubusercontent.com/28235504/213484914-dd290ce8-52fb-47e7-a092-606860785117.png)
    - ![image](https://user-images.githubusercontent.com/28235504/213485206-95b04a43-5145-459c-88d3-6c59d1180166.png)
    - ![image](https://user-images.githubusercontent.com/28235504/213487503-56a5a15e-49d9-4a7b-b0fc-887aca3c043d.png)
-   - ![image](https://user-images.githubusercontent.com/28235504/213488341-49a0c797-e7f4-40c1-88ce-d90571fd2008.png)
+   - ![image](https://user-images.githubusercontent.com/28235504/213483418-cd9402eb-35ce-4f72-b51f-3c96a80a1537.png)
 
 3. Try to configure IAP at the load balancer level to protect your ingress access. Is it possible to have IAP enabled for HTTP resources?
-   - ![image](https://user-images.githubusercontent.com/28235504/213483418-cd9402eb-35ce-4f72-b51f-3c96a80a1537.png)
+   - ![image](https://user-images.githubusercontent.com/28235504/213488341-49a0c797-e7f4-40c1-88ce-d90571fd2008.png)
+
 
  
 
