@@ -17,10 +17,16 @@
 
 ### Lab 3.2
 1. In previous lab you created an MIG of a template using the custom image “custom-img-nginx”, Create a Global (or Regional) HTTP Load balancer to access your MIGs Nginx setup.
-   - d
-   - 
+   - ![image](https://user-images.githubusercontent.com/28235504/213479392-50ee8183-a97a-432b-aab9-80583b2f1a5a.png)
+   - ![image](https://user-images.githubusercontent.com/28235504/213484914-dd290ce8-52fb-47e7-a092-606860785117.png)
+   - ![image](https://user-images.githubusercontent.com/28235504/213485206-95b04a43-5145-459c-88d3-6c59d1180166.png)
+
+
 3. Try to configure IAP at the load balancer level to protect your ingress access. Is it possible to have IAP enabled for HTTP resources?
-   - d
+   - ![image](https://user-images.githubusercontent.com/28235504/213483418-cd9402eb-35ce-4f72-b51f-3c96a80a1537.png)
+   - 
+   - 
+ 
 
 
 ### Lab 3.3
