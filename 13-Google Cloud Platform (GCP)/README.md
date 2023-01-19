@@ -64,7 +64,6 @@ IV. List all authenticated accounts.
 
 V.Activate the service account "my-first-serviceaccount".
  - ```gcloud auth activate-service-account my-first-serviceaccount-345@iti-makarios.iam.gserviceaccount.com --key-file=my-key.json```
- - ![image](https://user-images.githubusercontent.com/28235504/212969487-1a53ee7e-7a39-45bd-99d8-f1b7ef605a25.png)
 
 VI. List all authenticated accounts again.
  - ```gcloud auth list```
