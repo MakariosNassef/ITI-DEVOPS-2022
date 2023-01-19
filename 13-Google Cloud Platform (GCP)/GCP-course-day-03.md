@@ -32,11 +32,11 @@
 
 ### Lab 3.3
 1. Create a private standard GKE cluster.
-   - 
+   - dfs
 3. Deploy Nginx as a deployment using latest Nginx docker image on Docker Hub.
-   - 
+   - dsf
 5. Expose your Nginx deployment using Kubernetes LoadBalancer Service.
-   - 
+   - dsf
 7. What is the type of GCP Load Balancer that is created for your LB service?
 8. Use kubectl to view container logs.
 9. Use cloud logging service to view container logs. [hint: search about cloud logging service for gke]
