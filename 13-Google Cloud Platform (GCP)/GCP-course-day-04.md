@@ -9,6 +9,8 @@
 ### Delete the file from bucket-1 
 
 ## 2.Host a static website on a standard public GCS bucket.
+![image](https://user-images.githubusercontent.com/28235504/213772141-429eda0c-1779-4ff8-bac1-e693dc969809.png)
+
 
 ## 3.Deploy MySQL private instance and connect to it then create a new database.
 
