@@ -49,6 +49,7 @@ gcloud builds submit is a command in the Google Cloud SDK that allows you to sub
 ![image](https://user-images.githubusercontent.com/28235504/213765961-876091d8-1006-49e5-bd97-ca2b1abf8dbe.png)
 ![image](https://user-images.githubusercontent.com/28235504/213766048-11640bd6-5fa0-4779-bd18-7a8d021b8cf1.png)
 
+# $code
 ```
 # Clone the sample app repository
 git clone https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git
@@ -63,6 +64,7 @@ gcloud builds submit --tag gcr.io/iti-makarios/helloworld
 gcloud run deploy helloworld --image gcr.io/iti-makarios/helloworld --platform managed
 
 ```
+--------------------------------------
     
 ## 4.Using App Engine: - Run the sample hello-world python app
 
