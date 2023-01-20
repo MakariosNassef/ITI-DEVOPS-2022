@@ -1,19 +1,24 @@
 # lab 3.2
 
 ## 1.Using gsutil:
-### Create 3 buckets.
-
-### Enable Versioning for them. 
+### Create 3 buckets. & Enable Versioning for them.  
+![image](https://user-images.githubusercontent.com/28235504/213775124-3d4aac1b-6d51-420b-a5b8-a16fe8941271.png)
+![image](https://user-images.githubusercontent.com/28235504/213775770-26fa3409-7c28-4dc4-9e6c-8127805259fa.png)
 
 ### Upload a file into bucket-1 then copy it from bucket-1 into bucket-2 & bucket-3. 
+![image](https://user-images.githubusercontent.com/28235504/213776482-eae33621-bf54-4b91-b7d4-ce40cf86039b.png)
+![image](https://user-images.githubusercontent.com/28235504/213776719-b6897417-8e26-4ed6-84d9-54666279ff1f.png)
+
 ### Delete the file from bucket-1 
+![image](https://user-images.githubusercontent.com/28235504/213776876-5e8186a0-70d3-4501-9269-59e061a73716.png)
+![image](https://user-images.githubusercontent.com/28235504/213777012-9228f2d5-082a-41e0-b1f1-083e3f147215.png)
+
 
 ## 2.Host a static website on a standard public GCS bucket.
 ![image](https://user-images.githubusercontent.com/28235504/213772141-429eda0c-1779-4ff8-bac1-e693dc969809.png)
 
 
 ## 3.Deploy MySQL private instance and connect to it then create a new database.
-
 
 ------------------------
 # Lab 3.3
