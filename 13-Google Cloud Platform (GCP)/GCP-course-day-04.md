@@ -17,7 +17,6 @@
 
 
 ## 2.Host a static website on a standard public GCS bucket.
-![image](https://user-images.githubusercontent.com/28235504/213772141-429eda0c-1779-4ff8-bac1-e693dc969809.png)
 ![image](https://user-images.githubusercontent.com/28235504/213801953-d991890b-80cb-475b-bc51-a2a08db702df.png)
 ![image](https://user-images.githubusercontent.com/28235504/213802094-4bf8f572-fd10-4b9e-a1e8-93c9d2ee0cb5.png)
 ![image](https://user-images.githubusercontent.com/28235504/213802543-41351ea6-5bd7-4c72-a9e1-dada6a3ca806.png)
