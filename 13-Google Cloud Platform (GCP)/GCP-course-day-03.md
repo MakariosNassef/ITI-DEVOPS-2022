@@ -39,13 +39,56 @@
 3. Deploy Nginx as a deployment using latest Nginx docker image on Docker Hub.
       - ![image](https://user-images.githubusercontent.com/28235504/213599356-28f11dfd-9b61-4d22-9984-182cb07003ac.png)
 5. Expose your Nginx deployment using Kubernetes LoadBalancer Service.
-6. What is the type of GCP Load Balancer that is created for your LB service?
-7. Use kubectl to view container logs.
+      - ![image](https://user-images.githubusercontent.com/28235504/213600744-a59026ba-55b6-444d-bc31-0fa4ae24678a.png)
+
+7. What is the type of GCP Load Balancer that is created for your LB service?
+      - ![image](https://user-images.githubusercontent.com/28235504/213600871-12aecddd-a2d4-4ab8-be51-8739c02c1bb6.png)
+      - External load balancer
+
+9. Use kubectl to view container logs.
       - ![image](https://user-images.githubusercontent.com/28235504/213599652-f7aded54-5fd8-4138-be36-0b7695eb8585.png)
 
 8. Use cloud logging service to view container logs. [hint: search about cloud logging service for gke]
       - ![image](https://user-images.githubusercontent.com/28235504/213600501-624d801f-f20c-4d94-bd99-e9e8d27938d1.png)
 
 9. (Bonus) setup a HTTP load balancer for your deployment using the kubernetes ingress resource. (hint: link)
-10. Create an autopilot GKE cluster with public control plane.
-11. Enforce the cluster’s control plane to accept only connections from your local machine.
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lb-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - path: /lb-service
+        pathType: Prefix
+        pathRewrite: /
+        backend:
+          service:
+            name: lb-service
+            port:
+              name: http
+              number: 80
+```
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-service
+spec:
+  selector:
+    app: lb-app
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+  type: ClusterIP
+```
+> kubectl apply -f ingress.yaml -f service.yaml
+-----------------------------------------------------
+11. Create an autopilot GKE cluster with public control plane.
+12. Enforce the cluster’s control plane to accept only connections from your local machine.
