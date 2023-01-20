@@ -42,8 +42,27 @@ gcloud builds submit is a command in the Google Cloud SDK that allows you to sub
 
 ## 3. Using Cloud Run: 
 ### - Run a pre-built docker image (pulled from GCR).
-### - Build and Run any sample app
+![image](https://user-images.githubusercontent.com/28235504/213755196-b064fcb2-b336-4955-b7ca-4ed33018e980.png)
 
+### - Build and Run any sample app
+![image](https://user-images.githubusercontent.com/28235504/213765838-943bba31-74b7-4364-9598-9af627a20016.png)
+![image](https://user-images.githubusercontent.com/28235504/213765961-876091d8-1006-49e5-bd97-ca2b1abf8dbe.png)
+![image](https://user-images.githubusercontent.com/28235504/213766048-11640bd6-5fa0-4779-bd18-7a8d021b8cf1.png)
+
+```
+# Clone the sample app repository
+git clone https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git
+
+# Change directory
+cd nodejs-docs-samples/run/helloworld
+
+# Build and push the container image to Container Registry
+gcloud builds submit --tag gcr.io/iti-makarios/helloworld
+
+# Deploy the container image to Cloud Run
+gcloud run deploy helloworld --image gcr.io/iti-makarios/helloworld --platform managed
+
+```
     
 ## 4.Using App Engine: - Run the sample hello-world python app
 
