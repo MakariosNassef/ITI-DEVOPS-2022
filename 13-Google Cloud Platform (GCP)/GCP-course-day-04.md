@@ -36,6 +36,10 @@ gcloud builds submit is a command in the Google Cloud SDK that allows you to sub
     
 ## 2. Using Cloud Functions:
 - Create a Function that runs whenever a file is uploaded to a cloud storage bucket.
+![image](https://user-images.githubusercontent.com/28235504/213740898-394d5f0d-28cb-42c9-a692-d27ed9cc1eb5.png)
+![image](https://user-images.githubusercontent.com/28235504/213741155-9baeb209-4939-4220-bf03-c3be4a291b91.png)
+![image](https://user-images.githubusercontent.com/28235504/213741209-b2248f6a-23d1-4dc3-9bc5-64a62f58cbef.png)
+
 ## 3. Using Cloud Run: 
 ### - Run a pre-built docker image (pulled from GCR).
 ### - Build and Run any sample app
