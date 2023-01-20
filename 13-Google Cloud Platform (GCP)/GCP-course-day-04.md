@@ -49,10 +49,8 @@ gcloud builds submit is a command in the Google Cloud SDK that allows you to sub
 ### - Build and Run any sample app
 ![image](https://user-images.githubusercontent.com/28235504/213765838-943bba31-74b7-4364-9598-9af627a20016.png)
 ![image](https://user-images.githubusercontent.com/28235504/213765961-876091d8-1006-49e5-bd97-ca2b1abf8dbe.png)
-![image](https://user-images.githubusercontent.com/28235504/213766048-11640bd6-5fa0-4779-bd18-7a8d021b8cf1.png)
 ![image](https://user-images.githubusercontent.com/28235504/213767129-f8d6bd42-780d-41db-a82e-c01fcda4d60f.png)
-
-
+![image](https://user-images.githubusercontent.com/28235504/213766048-11640bd6-5fa0-4779-bd18-7a8d021b8cf1.png)
 # $code
 ```
 # Clone the sample app repository
