@@ -58,12 +58,11 @@ kind: Ingress
 metadata:
   name: lb-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ingress-class: "kubernets-macz"
 spec:
   rules:
-  - host: example.com
-    http:
-      paths:
+  - http:
+      paths: 
       - path: /lb-service
         pathType: Prefix
         pathRewrite: /
@@ -90,5 +89,10 @@ spec:
 ```
 > kubectl apply -f ingress.yaml -f service.yaml
 -----------------------------------------------------
+
 11. Create an autopilot GKE cluster with public control plane.
-12. Enforce the cluster’s control plane to accept only connections from your local machine.
+      - 
+13. Enforce the cluster’s control plane to accept only connections from your local machine.
+      - ![image](https://user-images.githubusercontent.com/28235504/213603047-527f1144-6388-40b5-9b84-63d440cd49d0.png)
+      - 
+
