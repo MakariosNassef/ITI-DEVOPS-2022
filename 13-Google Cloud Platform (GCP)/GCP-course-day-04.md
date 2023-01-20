@@ -21,9 +21,15 @@
 ![image](https://user-images.githubusercontent.com/28235504/213688321-e48b281c-8012-47f8-80a5-8683de594b5e.png)
 
 ### - Push Nginx docker image to GCR (make the image private).
+```
+gcloud builds submit is a command in the Google Cloud SDK that allows you to submit a build to Google Cloud Build. It is used to build and test your code, create images, and deploy your applications
+```
 ![image](https://user-images.githubusercontent.com/28235504/213697070-3fad418b-d037-4c83-9079-db40e585aaac.png)
 ![image](https://user-images.githubusercontent.com/28235504/213697481-bbe21af4-c9e8-4e95-90d7-d4942a5e8009.png)
 ![image](https://user-images.githubusercontent.com/28235504/213697966-e63145db-2d41-4a0e-9b9d-363d1d4eaa61.png)
+![image](https://user-images.githubusercontent.com/28235504/213710693-5e75e423-8b4a-455f-9b17-c1c6331b0c50.png)
+![image](https://user-images.githubusercontent.com/28235504/213721236-3db3cb71-d1ea-4e23-956e-3f6cff089e38.png)
+![image](https://user-images.githubusercontent.com/28235504/213717440-4fc7b49a-3c92-483d-a450-96c80f9f8b02.png)
 
 ### - Pull this image into a k8s setup or on a VM (hint: attach a SA on ur vm or gke with correct iam role).
 ![image](https://user-images.githubusercontent.com/28235504/213697128-1905c5c8-a9e0-4728-899f-534c7f54aa40.png)   
