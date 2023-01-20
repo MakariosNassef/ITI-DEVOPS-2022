@@ -32,11 +32,13 @@
 
 ### Lab 3.3
 1. Create a private standard GKE cluster.
-3. Deploy Nginx as a deployment using latest Nginx docker image on Docker Hub.
-5. Expose your Nginx deployment using Kubernetes LoadBalancer Service.
-7. What is the type of GCP Load Balancer that is created for your LB service?
-8. Use kubectl to view container logs.
-9. Use cloud logging service to view container logs. [hint: search about cloud logging service for gke]
-10. (Bonus) setup a HTTP load balancer for your deployment using the kubernetes ingress resource. (hint: link)
-11. Create an autopilot GKE cluster with public control plane.
-12. Enforce the cluster’s control plane to accept only connections from your local machine.
+2. Deploy Nginx as a deployment using latest Nginx docker image on Docker Hub.
+3. Expose your Nginx deployment using Kubernetes LoadBalancer Service.
+4. What is the type of GCP Load Balancer that is created for your LB service?
+5. Use kubectl to view container logs.
+      - ![image](https://user-images.githubusercontent.com/28235504/213597828-fa29d71b-307f-48f0-8da8-1544b4929897.png)
+7. Use cloud logging service to view container logs. [hint: search about cloud logging service for gke]
+      - 
+9. (Bonus) setup a HTTP load balancer for your deployment using the kubernetes ingress resource. (hint: link)
+10. Create an autopilot GKE cluster with public control plane.
+11. Enforce the cluster’s control plane to accept only connections from your local machine.
