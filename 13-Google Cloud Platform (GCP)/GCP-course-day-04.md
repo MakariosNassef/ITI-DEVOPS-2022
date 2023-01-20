@@ -2,9 +2,9 @@
 
 ## 1.Using gsutil:
 ### Create 3 buckets.
-    -
-    -
+
 ### Enable Versioning for them. 
+
 ### Upload a file into bucket-1 then copy it from bucket-1 into bucket-2 & bucket-3. 
 ### Delete the file from bucket-1 
 
@@ -18,7 +18,13 @@
 
 ## 1. Using gcloud & Docker:
 ### - Configure Docker & gcloud to work with GCR of your project.
+![image](https://user-images.githubusercontent.com/28235504/213694883-aff9329c-e506-44bd-8396-8f379da620ea.png)
 ### - Push Nginx docker image to GCR (make the image private).
+![image](https://user-images.githubusercontent.com/28235504/213697070-3fad418b-d037-4c83-9079-db40e585aaac.png)
+![image](https://user-images.githubusercontent.com/28235504/213697128-1905c5c8-a9e0-4728-899f-534c7f54aa40.png)
+![image](https://user-images.githubusercontent.com/28235504/213697481-bbe21af4-c9e8-4e95-90d7-d4942a5e8009.png)
+![image](https://user-images.githubusercontent.com/28235504/213697966-e63145db-2d41-4a0e-9b9d-363d1d4eaa61.png)
+
 ### - Pull this image into a k8s setup or on a VM (hint: attach a SA on ur vm or gke with correct iam role).
 ![image](https://user-images.githubusercontent.com/28235504/213688321-e48b281c-8012-47f8-80a5-8683de594b5e.png)
    
