@@ -25,7 +25,9 @@
     
 ## 2. Using Cloud Functions:
 - Create a Function that runs whenever a file is uploaded to a cloud storage bucket.
-## 3. Using Cloud Run: 1) Run a pre-built docker image (pulled from GCR). 2) Build and Run any sample app
+## 3. Using Cloud Run: 
+### 1) Run a pre-built docker image (pulled from GCR).
+### 2) Build and Run any sample app
     
 ## 4.Using App Engine: - Run the sample hello-world python app
 
