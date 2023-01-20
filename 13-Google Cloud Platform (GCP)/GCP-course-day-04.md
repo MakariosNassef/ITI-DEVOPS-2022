@@ -28,7 +28,9 @@ gcloud builds submit is a command in the Google Cloud SDK that allows you to sub
 ![image](https://user-images.githubusercontent.com/28235504/213697481-bbe21af4-c9e8-4e95-90d7-d4942a5e8009.png)
 ![image](https://user-images.githubusercontent.com/28235504/213697966-e63145db-2d41-4a0e-9b9d-363d1d4eaa61.png)
 ![image](https://user-images.githubusercontent.com/28235504/213710693-5e75e423-8b4a-455f-9b17-c1c6331b0c50.png)
+---------------
 ![image](https://user-images.githubusercontent.com/28235504/213721236-3db3cb71-d1ea-4e23-956e-3f6cff089e38.png)
+-------------------------
 ![image](https://user-images.githubusercontent.com/28235504/213717440-4fc7b49a-3c92-483d-a450-96c80f9f8b02.png)
 
 ### - Pull this image into a k8s setup or on a VM (hint: attach a SA on ur vm or gke with correct iam role).
