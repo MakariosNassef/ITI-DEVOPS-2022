@@ -91,8 +91,11 @@ spec:
 -----------------------------------------------------
 
 11. Create an autopilot GKE cluster with public control plane.
-      - 
+      - ![image](https://user-images.githubusercontent.com/28235504/213603360-15d0dfcf-45b8-43e7-9518-b712ea37b401.png)
+      - ![image](https://user-images.githubusercontent.com/28235504/213603416-3daedbcd-a232-40ad-bb7c-0468a81abbd7.png)
+     
 13. Enforce the cluster’s control plane to accept only connections from your local machine.
       - ![image](https://user-images.githubusercontent.com/28235504/213603047-527f1144-6388-40b5-9b84-63d440cd49d0.png)
-      - 
+      - ![image](https://user-images.githubusercontent.com/28235504/213603700-4ff9befc-058a-4c67-bee9-86290a0c8bab.png)
+
 
