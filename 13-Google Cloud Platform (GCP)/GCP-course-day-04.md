@@ -1,3 +1,5 @@
+# GCP Makarios Nassef
+# DAY 4
 # lab 3.2
 
 ## 1.Using gsutil:
