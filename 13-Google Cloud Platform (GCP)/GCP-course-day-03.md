@@ -96,6 +96,7 @@ spec:
      
 13. Enforce the cluster’s control plane to accept only connections from your local machine.
       - ![image](https://user-images.githubusercontent.com/28235504/213603047-527f1144-6388-40b5-9b84-63d440cd49d0.png)
-      - ![image](https://user-images.githubusercontent.com/28235504/213603700-4ff9befc-058a-4c67-bee9-86290a0c8bab.png)
+      - ![000029](https://user-images.githubusercontent.com/28235504/213604360-32fe265b-5c78-4d66-b5da-629bf9923002.jpg)
+
 
 
