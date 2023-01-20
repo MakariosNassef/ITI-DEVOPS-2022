@@ -16,9 +16,18 @@
 
 ## 2.Host a static website on a standard public GCS bucket.
 ![image](https://user-images.githubusercontent.com/28235504/213772141-429eda0c-1779-4ff8-bac1-e693dc969809.png)
+![image](https://user-images.githubusercontent.com/28235504/213801953-d991890b-80cb-475b-bc51-a2a08db702df.png)
+![image](https://user-images.githubusercontent.com/28235504/213802094-4bf8f572-fd10-4b9e-a1e8-93c9d2ee0cb5.png)
+![image](https://user-images.githubusercontent.com/28235504/213802543-41351ea6-5bd7-4c72-a9e1-dada6a3ca806.png)
+![image](https://user-images.githubusercontent.com/28235504/213802704-4d56e770-05c6-4bd9-ba06-bcd0e958974c.png)
 
 
 ## 3.Deploy MySQL private instance and connect to it then create a new database.
+![image](https://user-images.githubusercontent.com/28235504/213794278-4b6c8031-afc2-47dc-84c7-064213bd1c1f.png)
+![image](https://user-images.githubusercontent.com/28235504/213794434-4c8a432a-ebbf-4163-83c9-aa57762e2167.png)
+![image](https://user-images.githubusercontent.com/28235504/213796975-9b56f751-887e-4b8b-b37c-a809f379f035.png)
+![image](https://user-images.githubusercontent.com/28235504/213797641-c86c5b6d-e84c-45a7-b384-10856dc599b7.png)
+![image](https://user-images.githubusercontent.com/28235504/213805027-01cc4bab-1adc-4f08-a93c-ba500b3da8e9.png)
 
 ------------------------
 # Lab 3.3
