@@ -25,10 +25,8 @@
 ```
 
 ## 5- create free style pipeline and link it to private git repo(inside it create directory and create file with "hello world")
-![image](https://user-images.githubusercontent.com/28235504/215221958-d51e621d-7d2f-4e94-9f00-841f534e8f89.png)![image](https://user-images.githubusercontent.com/28235504/215221957-3a070de6-298e-4128-be04-f90992cde1f3.png)
+![image](https://user-images.githubusercontent.com/28235504/215221958-d51e621d-7d2f-4e94-9f00-841f534e8f89.png)
 ![image](https://user-images.githubusercontent.com/28235504/215222031-84fdb646-090c-4f59-b5bd-09ff7336bc47.png)
-
-
 
 ------------------------------------------------------
 
