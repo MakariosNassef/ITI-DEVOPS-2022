@@ -26,9 +26,10 @@
 
 ## 5- create free style pipeline and link it to private git repo(inside it create directory and create file with "hello world")
 
-#################
-- 1- create declarative in jenkins GUI pipeline for your own repo to do "ls"
+------------------------------------------------------
 
-- 2- create scripted in jenkins GUI pipeline for your own repo to do "ls"
+## 1- create declarative in jenkins GUI pipeline for your own repo to do "ls"
 
-- 3- create the same with jenkinsfile in your branches as multibranch pipeline. 
+## 2- create scripted in jenkins GUI pipeline for your own repo to do "ls"
+
+## 3- create the same with jenkinsfile in your branches as multibranch pipeline. 
