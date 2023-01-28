@@ -35,5 +35,9 @@
 ![image](https://user-images.githubusercontent.com/28235504/215227537-e2412f72-83d7-403a-a446-d98bbeb2aeed.png)
 
 ## 2- create scripted in jenkins GUI pipeline for your own repo to do "ls"
+![image](https://user-images.githubusercontent.com/28235504/215228061-f029c7be-3dbc-4ff0-8535-fb734316c3c8.png)
+![image](https://user-images.githubusercontent.com/28235504/215228112-e473c660-6842-48de-8e80-13a217af87f8.png)
 
-## 3- create the same with jenkinsfile in your branches as multibranch pipeline. 
+
+## 3- create the same with jenkinsfile in your branches as multibranch pipeline.
+
