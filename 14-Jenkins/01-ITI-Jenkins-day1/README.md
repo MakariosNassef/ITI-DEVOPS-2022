@@ -37,7 +37,31 @@
 ## 2- create scripted in jenkins GUI pipeline for your own repo to do "ls"
 ![image](https://user-images.githubusercontent.com/28235504/215228061-f029c7be-3dbc-4ff0-8535-fb734316c3c8.png)
 ![image](https://user-images.githubusercontent.com/28235504/215228112-e473c660-6842-48de-8e80-13a217af87f8.png)
-
+![image](https://user-images.githubusercontent.com/28235504/215228210-c8ce8d0a-cf81-4050-a305-d778c85c3d74.png)
 
 ## 3- create the same with jenkinsfile in your branches as multibranch pipeline.
+![image](https://user-images.githubusercontent.com/28235504/215229232-09e89c4a-181a-4ef3-aba9-f030cbf8c621.png)
+![image](https://user-images.githubusercontent.com/28235504/215229404-06e4635b-d1a0-4e6b-8794-12d8d352ab6a.png)``
 
+```
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'Hello, Build!'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'Hello, Test!'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'Hello, Deploy!'
+            }
+        }
+    }
+}
+```
