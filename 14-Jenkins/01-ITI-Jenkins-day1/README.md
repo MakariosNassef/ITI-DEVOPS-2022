@@ -41,7 +41,9 @@
 
 ## 3- create the same with jenkinsfile in your branches as multibranch pipeline.
 ![image](https://user-images.githubusercontent.com/28235504/215229232-09e89c4a-181a-4ef3-aba9-f030cbf8c621.png)
-![image](https://user-images.githubusercontent.com/28235504/215229404-06e4635b-d1a0-4e6b-8794-12d8d352ab6a.png)``
+![image](https://user-images.githubusercontent.com/28235504/215229404-06e4635b-d1a0-4e6b-8794-12d8d352ab6a.png)
+![image](https://user-images.githubusercontent.com/28235504/215229493-da0166d8-3728-49b2-9e2d-10e2221cc12b.png)
+
 
 ```
 pipeline {
