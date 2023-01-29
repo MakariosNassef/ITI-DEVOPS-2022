@@ -1,0 +1,8 @@
+- name: add nameserve 8.8.8.8 lineinfile
+  hosts: all
+  become: true
+  tasks:
+    - name: "Add the line"
+      lineinfile:
+        path: "/etc/resolv.conf"
+        line: "nameserver 8.8.8.8"
