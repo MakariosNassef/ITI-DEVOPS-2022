@@ -23,6 +23,40 @@
 ![image](https://user-images.githubusercontent.com/28235504/215534298-645011db-ff35-4f08-964a-92a5a9dd81c2.png)
 
 
-## 3- Add new record in resolv.conf file at manage node (/etc/resolv.conf) using playbook from control node
+## The following Ansible modules are used in this program:
+ - apt
+ - copy
+ - service
+ - shell
+ - fail
+ - debug (with_items)
+
+## The following Ansible conditional statements are used in this program:
+ - when: ansible_os_family == "Debian"
+ - when: ansible_os_family == "RedHat"
+ - when: result.stdout != "active"
+
+## The following list is used in this program:
+ - ["Makarios", "Nassef", "Macz"] (inside the with_items loop in the "Here I providing a simple list of names." task)
+ 
+## The following Ansible variables are used in this program:
+ - red_apache
+ - cent_httpd
+ - result.stdout
+ - item (inside the with_items loop)
+
+## The following tags are used in this program:
+ - install
+ - create-file
+ - start
+ 
+## The following handlers are used in this program:
+ - Start Apache web server on ubuntu
+ - Check that Apache is running
+ - Fail if Apache is not running
+ - Start httpd web server on Centos
+ - Check that httpd is running
+ - Fail if httpd is not running
 
 
+link of yaml file : 
