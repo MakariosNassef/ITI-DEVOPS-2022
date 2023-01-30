@@ -1,0 +1,15 @@
+- name: add nameserve 8.8.8.8 lineinfile
+  hosts: all
+  become: true
+  tasks:
+    - name: "Add the line Ubuntu"
+      lineinfile:
+        path: "/etc/resolv.conf"
+        line: "nameserver 8.8.8.8"
+      when: ansible_os_family == "Debian"
+
+    - name: "Add the line in Centos"
+      lineinfile:
+        path: "/etc/resolv.conf"
+        line: "nameserver 8.8.8.8"
+      when: ansible_os_family == "RedHat"
