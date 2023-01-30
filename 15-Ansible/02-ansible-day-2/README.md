@@ -19,6 +19,9 @@
 ![image](https://user-images.githubusercontent.com/28235504/215529756-ecde90a1-6452-4993-b6b8-9fb60f832cad.png)
 ![image](https://user-images.githubusercontent.com/28235504/215529909-6aac9e8b-8d98-4841-a86c-ee7cf3fb27c3.png)
 
+## RUNNING HANDLER
+![image](https://user-images.githubusercontent.com/28235504/215534298-645011db-ff35-4f08-964a-92a5a9dd81c2.png)
+
 
 ## 3- Add new record in resolv.conf file at manage node (/etc/resolv.conf) using playbook from control node
 
