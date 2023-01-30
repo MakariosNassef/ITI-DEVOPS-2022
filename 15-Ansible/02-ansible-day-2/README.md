@@ -9,6 +9,8 @@
 ## node centos
 ![image](https://user-images.githubusercontent.com/28235504/215473190-461cdf22-bf3f-4cb9-bcec-c95ac85de2b9.png)
 
+-------------------------------------------
+
 ## 2- Create index.html page on control node ,then create play book to install httpd then start the site with our index.html page (make sure that service os up and running , also make sure that all tasks in 1 playbook)
 
 ![image](https://user-images.githubusercontent.com/28235504/215530368-998e3ead-e279-48db-aa2b-74ed79afb51d.png)
@@ -63,3 +65,13 @@ link of playbook.yml file :
 https://github.com/MakariosNassef/ITI-DEVOPS-2022/blob/main/15-Ansible/02-ansible-day-2/playbook.yml
 link of vars.yml file :
 https://github.com/MakariosNassef/ITI-DEVOPS-2022/blob/main/15-Ansible/02-ansible-day-2/vars.yml
+
+-------------------------------------------
+## 3- Add new record in resolv.conf file at manage node (/etc/resolv.conf) using playbook from control node
+![image](https://user-images.githubusercontent.com/28235504/215539999-4272ec10-821a-4f01-8a40-470e9b715343.png)
+![image](https://user-images.githubusercontent.com/28235504/215540443-c2f031e3-97e9-4bd7-bdd1-745ec333e955.png)
+![image](https://user-images.githubusercontent.com/28235504/215540925-7326a832-c25f-46da-b71c-6f9782412999.png)
+
+link of playbook file :
+https://github.com/MakariosNassef/ITI-DEVOPS-2022/blob/main/15-Ansible/02-ansible-day-2/add-line.yml
+
