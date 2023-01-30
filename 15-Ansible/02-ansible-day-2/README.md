@@ -59,4 +59,6 @@
  - Fail if httpd is not running
 
 
-link of yaml file : 
+link of yaml file :
+https://github.com/MakariosNassef/ITI-DEVOPS-2022/blob/main/15-Ansible/02-ansible-day-2/playbook.yml
+https://github.com/MakariosNassef/ITI-DEVOPS-2022/blob/main/15-Ansible/02-ansible-day-2/vars.yml
