@@ -1,0 +1,83 @@
+- name: Create and configure website
+  hosts: all
+  become: true
+  vars_files:
+    - vars.yml
+  tasks:
+  - name: Install Apache web server on ubuntu
+    apt:
+      name: "{{ red_apache }}"
+      state: present
+    tags: install
+    when: ansible_os_family == "Debian"
+
+  - name: Create index.html file on ubuntu
+    copy:
+      content: "Makarios Nassef - Welcome to my website! from ubuntu"
+      dest: /var/www/html/index.html
+    tags: create-file
+    when: ansible_os_family == "Debian"
+  - name: Start Apache web server on ubuntu
+    service:
+      name: "{{ red_apache }}"
+      state: started
+    tags: start
+    when: ansible_os_family == "Debian"
+    ignore_errors: True
+  
+  - name: Check that Apache is running
+    shell: systemctl is-active "{{ red_apache }}"
+    register: resulta
+    when: ansible_os_family == "Debian"
+  
+  - name: Fail if Apache is not running
+    fail:
+      msg: "Apache is not running"
+    when: 
+      - ansible_os_family == "Debian"
+      - resulta.stdout != "active"
+    ignore_errors: True
+
+  - name: Install httpd web server on Centos
+    yum:
+      name: "{{ cent_httpd }}"
+      state: present
+    tags: install
+    when: ansible_os_family == "RedHat"
+  - name: Create index.html file on Centos
+    copy:
+      content: "Makarios Nassef - Welcome to my website from Centos!"
+      dest: /var/www/html/index.html
+    tags: create-file
+    when: ansible_os_family == "RedHat"
+  - name: Start httpd web server on Centos
+    service:
+      name: "{{ cent_httpd }}"
+      state: started
+    tags: start
+    when: ansible_os_family == "RedHat"
+    ignore_errors: True
+
+  - name: Check that httpd is running
+    shell: systemctl is-active httpd
+    register: result
+    when: ansible_os_family == "RedHat"
+    notify:
+      - Fail if httpd is not running
+  
+  - name : Here we are providing a simple list of names.
+    ansible.builtin.debug:
+       msg: Current Fruit item is {{ item }}
+    with_items:
+     - Makarios
+     - Nassef
+     - Macz
+  
+  handlers:
+  - name: Fail if httpd is not running
+    fail:
+      msg: "httpd is not running"
+    when: 
+      - ansible_os_family == "RedHat"
+      - result.stdout != "active"
+    ignore_errors: True
