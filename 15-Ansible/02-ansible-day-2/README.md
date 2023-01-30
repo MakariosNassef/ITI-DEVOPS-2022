@@ -11,6 +11,15 @@
 
 ## 2- Create index.html page on control node ,then create play book to install httpd then start the site with our index.html page (make sure that service os up and running , also make sure that all tasks in 1 playbook)
 
+![image](https://user-images.githubusercontent.com/28235504/215530368-998e3ead-e279-48db-aa2b-74ed79afb51d.png)
+![image](https://user-images.githubusercontent.com/28235504/215530461-c50d0475-e3ef-494c-99cf-a916cf5f4ba9.png)
+
+## tags
+![image](https://user-images.githubusercontent.com/28235504/215529544-e8680629-3fe4-43e4-a38e-fc06558127cc.png)
+![image](https://user-images.githubusercontent.com/28235504/215529756-ecde90a1-6452-4993-b6b8-9fb60f832cad.png)
+![image](https://user-images.githubusercontent.com/28235504/215529909-6aac9e8b-8d98-4841-a86c-ee7cf3fb27c3.png)
+
+
 ## 3- Add new record in resolv.conf file at manage node (/etc/resolv.conf) using playbook from control node
 
 
