@@ -1,0 +1,16 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: |
+          docker build . --file Dockerfile --tag ${{ secrets.USER}}/django-app:007
+          docker login -u ${{ secrets.USER}} -p ${{secrets.PASS}}
+          docker push ${{ secrets.USER}}/django-app:007
