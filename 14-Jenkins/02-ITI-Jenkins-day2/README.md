@@ -1,6 +1,8 @@
 # Jenkins
 
 ## Jenkins Course Lab 1 day 2
+### in this lab i make reverse proxy on an EC2 instance to work with Jenkins image and run Docker commands on the host Docker daemon.
+![image](https://user-images.githubusercontent.com/28235504/216357225-4e041797-f00b-4787-aa70-ea51dce6b6a3.png)
 
 ## 4- configure jenkins image to run docker commands on your host docker daemon
 ![image](https://user-images.githubusercontent.com/28235504/216189761-147089ac-87a7-4757-bcd7-c28176b85de5.png)
