@@ -44,6 +44,9 @@ sudo docker run -it -d --name cont-slave -v /var/run/docker.sock:/var/run/docker
 ![image](https://user-images.githubusercontent.com/28235504/216320463-8703ab30-784c-40c1-8f6d-ee6a1968eaad.png)
 
   - 3  from jenkins master create new node with the slave container
+![image](https://user-images.githubusercontent.com/28235504/216322743-ba7d9445-e9d5-47aa-af12-7e149cfc316d.png)
+![image](https://user-images.githubusercontent.com/28235504/216324102-3abfefac-028e-4970-a07b-3bb0fa6d3e61.png)
+
   - 4- integrate slack with jenkins
   - 5- send slack message when stage in your pipeline is successful
   
