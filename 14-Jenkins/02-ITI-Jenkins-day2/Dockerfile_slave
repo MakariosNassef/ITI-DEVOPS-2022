@@ -1,0 +1,21 @@
+FROM ubuntu:latest
+# Set the user to run the Jenkins slave
+USER root
+
+# Install necessary packages and dependencies
+RUN apt-get update -y
+RUN apt-get install -y openssh-server
+RUN apt-get install openjdk-11-jdk -y
+RUN apt-get install git -y
+RUN apt-get install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y
+RUN apt-get update -y
+RUN apt-get install docker-ce docker-ce-cli containerd.io -y
+
+# copy id_rsa.pub and change name of the file
+RUN mkdir /root/.ssh
+COPY id_rsa.pub /root/.ssh/authorized_keys
+
+# Set the user back to Jenkins slave user
+ENTRYPOINT service ssh start && bash
