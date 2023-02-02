@@ -61,5 +61,6 @@ sudo docker run -it -d --name contan-slave -p 50000:50000 -v /var/run/docker.soc
 ![image](https://user-images.githubusercontent.com/28235504/216346602-25923b6b-4f2c-4794-a761-b62bcdfa09db.png)
 
 ## 6- install audit logs plugin and test it
+![image](https://user-images.githubusercontent.com/28235504/216348019-6b7a1cef-0b24-40ed-a26d-f5b394ac2f5b.png)
 
 ## 7- fork the following repo https://github.com/mahmoud254/Booster_CI_CD_Project and add dockerfile to run this django app and use github actions to build the docker image and push it to your dockerhub
