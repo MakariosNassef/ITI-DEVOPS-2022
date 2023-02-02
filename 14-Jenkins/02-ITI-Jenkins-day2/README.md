@@ -34,6 +34,11 @@ sudo docker run -it -d --name jenkins-master -p 8080:8080 -v /var/run/docker.soc
 ![image](https://user-images.githubusercontent.com/28235504/216198857-359851fb-58a7-4958-929c-bc0022973d0d.png)
 
   - 1- create docker file to build image for jenkins slave
+sudo docker run -it -d --name cont-slave -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_slave:/var/jenkins_slave jenkins-slave-ubuntu:latest
+![image](https://user-images.githubusercontent.com/28235504/216308504-85873305-2230-4406-b969-d8c4d098b5e4.png)
+![image](https://user-images.githubusercontent.com/28235504/216317012-773df251-416a-447c-af6d-94f34376dd09.png)
+![image](https://user-images.githubusercontent.com/28235504/216320035-e7a067bc-b3e4-4220-9825-c9809392c2df.png)
+
   - 2- create container from this image and configure ssh
   - 3  from jenkins master create new node with the slave container
   - 4- integrate slack with jenkins
