@@ -34,7 +34,7 @@ sudo docker run -it -d --name jenkins-master -p 8080:8080 -v /var/run/docker.soc
 ![image](https://user-images.githubusercontent.com/28235504/216198857-359851fb-58a7-4958-929c-bc0022973d0d.png)
 
   - 1- create docker file to build image for jenkins slave
-sudo docker run -it -d --name cont-slave -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_slave:/var/jenkins_slave jenkins-slave-ubuntu:latest
+sudo docker run -it -d --name contan-slave -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_slave:/var/jenkins_slave jenkins-slave-ubuntu:latest
 ![image](https://user-images.githubusercontent.com/28235504/216308504-85873305-2230-4406-b969-d8c4d098b5e4.png)
 ![image](https://user-images.githubusercontent.com/28235504/216317012-773df251-416a-447c-af6d-94f34376dd09.png)
 
@@ -46,6 +46,7 @@ sudo docker run -it -d --name cont-slave -v /var/run/docker.sock:/var/run/docker
   - 3  from jenkins master create new node with the slave container
 ![image](https://user-images.githubusercontent.com/28235504/216322743-ba7d9445-e9d5-47aa-af12-7e149cfc316d.png)
 ![image](https://user-images.githubusercontent.com/28235504/216324102-3abfefac-028e-4970-a07b-3bb0fa6d3e61.png)
+![image](https://user-images.githubusercontent.com/28235504/216329040-0b26e8e7-5abc-4760-997f-b2f6229a639f.png)
 
   - 4- integrate slack with jenkins
   - 5- send slack message when stage in your pipeline is successful
