@@ -67,5 +67,8 @@ sudo docker run -it -d --name contan-slave -p 50000:50000 -v /var/run/docker.soc
 ![image](https://user-images.githubusercontent.com/28235504/216348712-e97a2381-2bfe-42ee-b044-bd8d92494861.png)
 ![image](https://user-images.githubusercontent.com/28235504/216349590-a706d78b-378d-4d80-8360-35b7ee0b22b7.png)
 ![image](https://user-images.githubusercontent.com/28235504/216350757-3fff3a6d-4268-4d77-b4dd-c60bb3aa2d27.png)
+![image](https://user-images.githubusercontent.com/28235504/216353086-a617b818-fcdc-47dc-af42-bd8abbdc1cc4.png)
+![image](https://user-images.githubusercontent.com/28235504/216353616-9f6e01a8-9905-4a3e-9cb4-060526facdc9.png)
+![image](https://user-images.githubusercontent.com/28235504/216353562-035e87ef-48a8-4297-bbb3-133e98b5edb3.png)
 
 
