@@ -24,7 +24,7 @@ RUN apt-get update && \
 
 #USER jenkins
 ```
-sudo docker run -it -d --name jenkins-master -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home master-jenkins:007
+sudo docker run -it -d --name jenkins-master -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home master-jenkins:009
 
 ### 5- create CI/CD for this repo https://github.com/mahmoud254/jenkins_nodejs_example.git New Questions part.
   - 1- create docker file to build image for jenkins slave
