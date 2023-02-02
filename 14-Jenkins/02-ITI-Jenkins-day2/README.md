@@ -26,7 +26,12 @@ RUN apt-get update && \
 ```
 sudo docker run -it -d --name jenkins-master -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home master-jenkins:009
 
-### 5- create CI/CD for this repo https://github.com/mahmoud254/jenkins_nodejs_example.git New Questions part.
+### 5- create CI/CD for this repo https://github.com/mahmoud254/jenkins_nodejs_example.git
+![image](https://user-images.githubusercontent.com/28235504/216196642-bad43a8c-9f3b-4a28-ab2e-7d7a7c28c3b0.png)
+![image](https://user-images.githubusercontent.com/28235504/216198131-60dd13bc-817d-40a0-82e9-64b408548881.png)
+![image](https://user-images.githubusercontent.com/28235504/216198169-7f7a9030-2e09-4495-8104-69d6a0dab1ac.png)
+
+New Questions part.
   - 1- create docker file to build image for jenkins slave
   - 2- create container from this image and configure ssh
   - 3 from jenkins master create new node with the slave container
