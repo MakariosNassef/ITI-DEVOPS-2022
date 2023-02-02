@@ -52,7 +52,9 @@ sudo docker run -it -d --name contan-slave -p 50000:50000 -v /var/run/docker.soc
 
   - 4- integrate slack with jenkins
 ![image](https://user-images.githubusercontent.com/28235504/216342676-cd122804-06d4-41a7-954b-311fb9d06e98.png)
-
+![image](https://user-images.githubusercontent.com/28235504/216343413-92471d27-c7a6-4e5d-8b3a-2a9148ddb1af.png)
+![image](https://user-images.githubusercontent.com/28235504/216345573-51502f48-d881-4b94-a542-8493f6c36714.png)
+![image](https://user-images.githubusercontent.com/28235504/216345681-eb4651ea-82ca-431f-ac00-77b455a3c277.png)
 
   - 5- send slack message when stage in your pipeline is successful
   
