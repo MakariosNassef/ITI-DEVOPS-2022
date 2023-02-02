@@ -6,25 +6,16 @@
 ![image](https://user-images.githubusercontent.com/28235504/216189761-147089ac-87a7-4757-bcd7-c28176b85de5.png)
 ![image](https://user-images.githubusercontent.com/28235504/216193129-969f1f52-aaf4-41f7-bc5d-f83cca9f8063.png)
 
-- ip of countainer that used in my revirse proxy on the EC2 instance
+### ip of countainer that used in my revirse proxy on the EC2 instance
 ![image](https://user-images.githubusercontent.com/28235504/216193434-ee570096-279f-44a9-963b-b86765a94cb4.png)
 ![image](https://user-images.githubusercontent.com/28235504/216193807-7d0422b8-df6a-4bc4-8f16-69a2663b6ed5.png)
 ![image](https://user-images.githubusercontent.com/28235504/216193899-6d012069-4293-4465-acbb-6c9415db3cd4.png)
 ![image](https://user-images.githubusercontent.com/28235504/216193951-af293759-99e8-41f4-8bda-b5512c2c201a.png)
 
-```
-FROM jenkins/jenkins:lts
-USER root
-RUN apt-get update && \
-    apt-get install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y && \
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
-    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y && \
-    apt-get update && \
-    apt-get install docker-ce docker-ce-cli containerd.io -y
 
-#USER jenkins
-```
+``` 
 sudo docker run -it -d --name jenkins-master -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home master-jenkins:009
+```
 
 ## 5- create CI/CD for this repo https://github.com/mahmoud254/jenkins_nodejs_example.git
 ![image](https://user-images.githubusercontent.com/28235504/216196642-bad43a8c-9f3b-4a28-ab2e-7d7a7c28c3b0.png)
@@ -40,6 +31,7 @@ sudo docker run -it -d --name contan-slave -p 50000:50000 -v /var/run/docker.soc
 
 ### 2- create container from this image and configure ssh
 ![image](https://user-images.githubusercontent.com/28235504/216320035-e7a067bc-b3e4-4220-9825-c9809392c2df.png)
+
 ### configure ssh
 ![image](https://user-images.githubusercontent.com/28235504/216320463-8703ab30-784c-40c1-8f6d-ee6a1968eaad.png)
 
