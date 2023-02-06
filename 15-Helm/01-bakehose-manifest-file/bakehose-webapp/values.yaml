@@ -1,0 +1,17 @@
+replicaCount: 2
+
+image:
+  repository: kareemelkasaby/itimansbakehouse:7
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 80
+  nodePort: 30303
+
+matchLabels:
+  app: app
+
+port:
+  containerPort: 80
