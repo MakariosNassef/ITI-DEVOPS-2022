@@ -1,4 +1,12 @@
 # Lab 1
+to install Helm
+
+```
+$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+$ chmod 700 get_helm.sh
+$ ./get_helm.sh
+```
+    
 ## 1. Create a helm chart for the app below and deploy it (try to keep everything changeable using values.yaml)
 https://github.com/SamarGooda/bakehouse-ITI.
 
@@ -11,4 +19,17 @@ https://github.com/SamarGooda/bakehouse-ITI.
 ### Helm Rollback
  . ![image](https://user-images.githubusercontent.com/28235504/217105939-261d48d2-9bd0-4103-b1ba-ab1a29ad675b.png)
 
+
 ## 2. Deploy Jenkins Chart on the cluster and login to Jenkins. 
+ - Jenkins package https://artifacthub.io/packages/helm/jenkinsci/jenkins
+![image](https://user-images.githubusercontent.com/28235504/217109258-e138c897-6fc9-4979-b4db-07de8433457b.png)
+
+
+NOTES:
+1. Get your 'admin' user password by running:
+  kubectl exec --namespace default -it svc/my-jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo
+2. Get the Jenkins URL to visit by running these commands in the same shell:
+  echo http://127.0.0.1:8080
+  kubectl --namespace default port-forward svc/my-jenkins 8080:8080
+
+3. Login with the password from step 1 and the username: admin
