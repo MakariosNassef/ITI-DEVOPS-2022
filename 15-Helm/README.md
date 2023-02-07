@@ -21,15 +21,17 @@ https://github.com/SamarGooda/bakehouse-ITI.
 
 
 ## 2. Deploy Jenkins Chart on the cluster and login to Jenkins. 
- - Jenkins package https://artifacthub.io/packages/helm/jenkinsci/jenkins
+- Jenkins package https://artifacthub.io/packages/helm/jenkinsci/jenkins
+- helm repo add jenkins https://charts.jenkins.io
+- helm repo update
 ![image](https://user-images.githubusercontent.com/28235504/217109258-e138c897-6fc9-4979-b4db-07de8433457b.png)
 
-
+```
 NOTES:
 1. Get your 'admin' user password by running:
-  kubectl exec --namespace default -it svc/my-jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo
+   - kubectl exec --namespace default -it svc/my-jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo
 2. Get the Jenkins URL to visit by running these commands in the same shell:
-  echo http://127.0.0.1:8080
-  kubectl --namespace default port-forward svc/my-jenkins 8080:8080
-
+   - echo http://127.0.0.1:8080
+   - kubectl --namespace default port-forward svc/my-jenkins 8080:8080
 3. Login with the password from step 1 and the username: admin
+```
