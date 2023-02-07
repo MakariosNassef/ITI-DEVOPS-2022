@@ -35,4 +35,6 @@ NOTES:
    - kubectl --namespace default port-forward svc/my-jenkins 8080:8080
 3. Login with the password from step 1 and the username: admin
 ```
-![image](https://user-images.githubusercontent.com/28235504/217117865-1ae8522c-81c3-41ec-b233-2d03c455b1f4.png)
+![image](https://user-images.githubusercontent.com/28235504/217233722-1c9fab6c-267c-4322-8203-311d998305f0.png)
+
+![image](https://user-images.githubusercontent.com/28235504/217235227-212d9246-5302-4741-ac16-f6bb0aa10643.png)
