@@ -6,14 +6,17 @@
 ### - Apply `Sonarqube` on K8S useing Helm to deploy
 ![image](https://user-images.githubusercontent.com/28235504/217274336-65d9429a-753b-4984-bb72-184c7875e838.png)
 ### - Output
-![image](https://user-images.githubusercontent.com/28235504/217259869-6f4d5538-6a72-4b29-925a-093efb22136a.png)
-![image](https://user-images.githubusercontent.com/28235504/217259997-90b52ffa-c984-49d3-b514-c3ce5c9ac414.png)
-![image](https://user-images.githubusercontent.com/28235504/217259709-dfdb6921-870e-4896-ae40-47b75f3a5262.png)
-![image](https://user-images.githubusercontent.com/28235504/217259756-36cdc518-8929-4ae5-a470-6c31b0ad4150.png)
+![image](https://user-images.githubusercontent.com/28235504/217549045-4d03c56c-e641-4601-9be2-ae12cbe0761c.png)
+![image](https://user-images.githubusercontent.com/28235504/217549236-a403e058-f58d-4875-902c-884c3f0f6e31.png)
+![image](https://user-images.githubusercontent.com/28235504/217549447-dfb502a3-74f4-47ce-85fb-5821c17a71b2.png)
+![image](https://user-images.githubusercontent.com/28235504/217549563-80de1bc6-490a-4273-b5ac-be164014264f.png)
+
 
 
 # integrate SonarQube with Jenkins
 - Apply Jenkins on K8S useing Helm to deploy
+![image](https://user-images.githubusercontent.com/28235504/217549891-c45b0945-db3f-434d-a88a-1790083d61e0.png)
+![image](https://user-images.githubusercontent.com/28235504/217550017-d57ffd16-703a-4e0b-8969-2e90b0a51b44.png)
 
 
 # Bonus: add multibranch plugins 
