@@ -27,15 +27,15 @@
   5. Create a Jenkins job that will run a SonarQube analysis on any codebase and report back any issues or warnings found by SonarQube.
   6. Monitor the results of the analysis and take action as necessary to address any issues or warnings found by SonarQube.
 
-![image](https://user-images.githubusercontent.com/28235504/217549891-c45b0945-db3f-434d-a88a-1790083d61e0.png)
-![image](https://user-images.githubusercontent.com/28235504/217550017-d57ffd16-703a-4e0b-8969-2e90b0a51b44.png)
-![image](https://user-images.githubusercontent.com/28235504/217564649-4f648136-742b-4727-ba28-97f71b837dee.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217549891-c45b0945-db3f-434d-a88a-1790083d61e0.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217550017-d57ffd16-703a-4e0b-8969-2e90b0a51b44.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217564649-4f648136-742b-4727-ba28-97f71b837dee.png)
 ### Generate Tokens 
-![image](https://user-images.githubusercontent.com/28235504/217664071-66f7a7b4-5ad4-4b5f-ab9e-b97ea44c41dc.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217664071-66f7a7b4-5ad4-4b5f-ab9e-b97ea44c41dc.png)
 ### Add Credentials for sonarqube in jenkins
-![image](https://user-images.githubusercontent.com/28235504/217551126-e2c2d3d1-7130-424c-99b9-b92693b0e4e5.png)
-![image](https://user-images.githubusercontent.com/28235504/217551534-942168fe-2b62-4a16-b7e6-aaa2f5a95119.png)
-![image](https://user-images.githubusercontent.com/28235504/217551870-5440b6f7-ae7b-4e21-bbca-95f2812c485f.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217551126-e2c2d3d1-7130-424c-99b9-b92693b0e4e5.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217551534-942168fe-2b62-4a16-b7e6-aaa2f5a95119.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217551870-5440b6f7-ae7b-4e21-bbca-95f2812c485f.png)
 
 
 ## 3- Bonus: add multibranch plugins 
