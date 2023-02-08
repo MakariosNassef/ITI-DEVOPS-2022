@@ -6,7 +6,7 @@
   4. Create a SonarQube chart using Helm.
   5. Deploy the SonarQube chart to My Kubernetes cluster using Helm.
 
-### - Cloning a repository `https://github.com/kareemelkasaby1/Sonarqube-Demo`
+### - Cloning a repository https://github.com/kareemelkasaby1/Sonarqube-Demo
 ![image](https://user-images.githubusercontent.com/28235504/217260156-b0053835-6f13-4029-8817-4a4ed4753bf4.png)
 ### - Apply `Postgress` on K8S  useing Helm to deploy
 ![image](https://user-images.githubusercontent.com/28235504/217274487-c8e70ce7-287d-43fd-8342-0d838519a0ce.png)
