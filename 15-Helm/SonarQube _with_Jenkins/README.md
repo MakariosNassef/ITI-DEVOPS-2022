@@ -1,4 +1,5 @@
-# Install SonarQube with helm
+# SonarQube with Jenkins
+## Install SonarQube with helm
 ### - Cloning a repository `https://github.com/kareemelkasaby1/Sonarqube-Demo`
 ![image](https://user-images.githubusercontent.com/28235504/217260156-b0053835-6f13-4029-8817-4a4ed4753bf4.png)
 ### - Apply `Postgress` on K8S  useing Helm to deploy
@@ -12,11 +13,12 @@
 ![image](https://user-images.githubusercontent.com/28235504/217549563-80de1bc6-490a-4273-b5ac-be164014264f.png)
 
 
-
-# integrate SonarQube with Jenkins
-- Apply Jenkins on K8S useing Helm to deploy
+## integrate SonarQube with Jenkins - Apply Jenkins on K8S useing Helm to deploy
 ![image](https://user-images.githubusercontent.com/28235504/217549891-c45b0945-db3f-434d-a88a-1790083d61e0.png)
 ![image](https://user-images.githubusercontent.com/28235504/217550017-d57ffd16-703a-4e0b-8969-2e90b0a51b44.png)
+![image](https://user-images.githubusercontent.com/28235504/217551126-e2c2d3d1-7130-424c-99b9-b92693b0e4e5.png)
+![image](https://user-images.githubusercontent.com/28235504/217551534-942168fe-2b62-4a16-b7e6-aaa2f5a95119.png)
+![image](https://user-images.githubusercontent.com/28235504/217551870-5440b6f7-ae7b-4e21-bbca-95f2812c485f.png)
 
 
 # Bonus: add multibranch plugins 
