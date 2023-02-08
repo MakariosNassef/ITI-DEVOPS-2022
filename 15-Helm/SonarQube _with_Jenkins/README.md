@@ -1,5 +1,11 @@
 # SonarQube with Jenkins
 ## Install SonarQube with helm
+  1. Install Helm and create Kubernetes cluster.
+  2. Create a Postgress chart using Helm.
+  3. Deploy the Postgress chart to My Kubernetes cluster using Helm.
+  4. Create a SonarQube chart using Helm.
+  5. Deploy the SonarQube chart to My Kubernetes cluster using Helm.
+
 ### - Cloning a repository `https://github.com/kareemelkasaby1/Sonarqube-Demo`
 ![image](https://user-images.githubusercontent.com/28235504/217260156-b0053835-6f13-4029-8817-4a4ed4753bf4.png)
 ### - Apply `Postgress` on K8S  useing Helm to deploy
@@ -14,6 +20,13 @@
 
 
 ## integrate SonarQube with Jenkins - Apply Jenkins on K8S useing Helm to deploy
+  1. Create a Jenkins chart using Helm.
+  2. Deploy the Jenkins chart to My Kubernetes cluster using Helm.
+  3. Configure the Jenkins chart to include the SonarQube plugin.
+  4. Configure the SonarQube plugin in Jenkins with the appropriate credentials and settings for my SonarQube instance.
+  5. Create a Jenkins job that will run a SonarQube analysis on any codebase and report back any issues or warnings found by SonarQube.
+  6. Monitor the results of the analysis and take action as necessary to address any issues or warnings found by SonarQube.
+
 ![image](https://user-images.githubusercontent.com/28235504/217549891-c45b0945-db3f-434d-a88a-1790083d61e0.png)
 ![image](https://user-images.githubusercontent.com/28235504/217550017-d57ffd16-703a-4e0b-8969-2e90b0a51b44.png)
 ![image](https://user-images.githubusercontent.com/28235504/217564649-4f648136-742b-4727-ba28-97f71b837dee.png)
