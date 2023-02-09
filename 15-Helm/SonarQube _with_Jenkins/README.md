@@ -77,3 +77,10 @@ pipeline{
 
 
 ## 3- Bonus: add multibranch plugins 
+## this is pipeline from private repo on github with 3 branches and filter branches to contain only (main , dev , test )
+![image](https://user-images.githubusercontent.com/28235504/217937227-b7c7a8c3-8443-4f26-9364-da41ba43d029.png)
+![image](https://user-images.githubusercontent.com/28235504/217937275-990e5219-56cd-44d8-9044-f064b096f0d1.png)
+![image](https://user-images.githubusercontent.com/28235504/217937354-15cd14c3-ea37-45f3-90d1-7dd726ee1645.png)
+![image](https://user-images.githubusercontent.com/28235504/217937686-05672485-6a96-4ff0-a6c6-43e1d088ca92.png)
+![image](https://user-images.githubusercontent.com/28235504/217937732-de589005-a48e-48c3-845d-f91dcae28829.png)
+![image](https://user-images.githubusercontent.com/28235504/217937765-23ba36ba-be67-418e-9c68-69fb19ed3ebe.png)
