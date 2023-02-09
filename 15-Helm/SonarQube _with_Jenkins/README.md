@@ -34,8 +34,43 @@
 - ![image](https://user-images.githubusercontent.com/28235504/217664071-66f7a7b4-5ad4-4b5f-ab9e-b97ea44c41dc.png)
 ### Add Credentials for sonarqube in jenkins
 - ![image](https://user-images.githubusercontent.com/28235504/217551126-e2c2d3d1-7130-424c-99b9-b92693b0e4e5.png)
-- ![image](https://user-images.githubusercontent.com/28235504/217551534-942168fe-2b62-4a16-b7e6-aaa2f5a95119.png)
+- ![image](https://user-images.githubusercontent.com/28235504/217673220-47f06855-70e3-46d1-a660-919895e455ed.png)
 - ![image](https://user-images.githubusercontent.com/28235504/217551870-5440b6f7-ae7b-4e21-bbca-95f2812c485f.png)
+
+```
+pipeline{
+    agent any
+    environment {
+        PATH = "$PATH:/usr/share/maven/bin"
+    }
+    stages{
+       stage('GetCode'){
+            steps{
+                git 'https://github.com/ravdy/java-app.git'
+            }
+         }        
+       stage('Build'){
+            steps{
+                sh 'mvn clean package'
+            }
+         }
+        stage('SonarQube analysis') {
+//    def scannerHome = tool 'SonarScanner 4.0';
+        steps{
+        withSonarQubeEnv('sonarqube-8.9.1') { 
+        // If you have configured more than one global server connection, you can specify its name
+//      sh "${scannerHome}/bin/sonar-scanner"
+        sh "mvn sonar:sonar"
+    }
+        }
+        }
+       
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/28235504/217679186-3c86180c-407e-4d44-9512-507246740f42.png)
+![image](https://user-images.githubusercontent.com/28235504/217679137-4e44ae7e-98eb-4050-a622-fcdfe143f522.png)
+![image](https://user-images.githubusercontent.com/28235504/217679053-157feccd-6283-457c-b2bd-07c4f848d4cd.png)
 
 
 ## 3- Bonus: add multibranch plugins 
