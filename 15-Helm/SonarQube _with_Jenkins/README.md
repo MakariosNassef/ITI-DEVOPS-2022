@@ -20,12 +20,12 @@
 
 
 ## 2- integrate SonarQube with Jenkins - Apply Jenkins on K8S useing Helm to deploy
-  1. Create a Jenkins chart using Helm.
-  2. Deploy the Jenkins chart to My Kubernetes cluster using Helm.
-  3. Configure the Jenkins chart to include the SonarQube plugin.
-  4. Configure the SonarQube plugin in Jenkins with the appropriate credentials and settings for my SonarQube instance.
-  5. Create a Jenkins job that will run a SonarQube analysis on any codebase and report back any issues or warnings found by SonarQube.
-  6. Monitor the results of the analysis and take action as necessary to address any issues or warnings found by SonarQube.
+### 1. Create a Jenkins chart using Helm.
+### 2. Deploy the Jenkins chart to My Kubernetes cluster using Helm.
+### 3. Configure the Jenkins chart to include the SonarQube plugin.
+### 4. Configure the SonarQube plugin in Jenkins with the appropriate credentials and settings for my SonarQube instance.
+### 5. Create a Jenkins job that will run a SonarQube analysis on any codebase and report back any issues or warnings found by SonarQube.
+### 6. Monitor the results of the analysis and take action as necessary to address any issues or warnings found by SonarQube.
 
 - ![image](https://user-images.githubusercontent.com/28235504/217549891-c45b0945-db3f-434d-a88a-1790083d61e0.png)
 - ![image](https://user-images.githubusercontent.com/28235504/217550017-d57ffd16-703a-4e0b-8969-2e90b0a51b44.png)
@@ -36,7 +36,7 @@
 - ![image](https://user-images.githubusercontent.com/28235504/217551126-e2c2d3d1-7130-424c-99b9-b92693b0e4e5.png)
 - ![image](https://user-images.githubusercontent.com/28235504/217673220-47f06855-70e3-46d1-a660-919895e455ed.png)
 - ![image](https://user-images.githubusercontent.com/28235504/217551870-5440b6f7-ae7b-4e21-bbca-95f2812c485f.png)
-
+ 
 ```
 pipeline{
     agent any
@@ -68,6 +68,8 @@ pipeline{
     }
 }
 ```
+
+![image](https://user-images.githubusercontent.com/28235504/217680396-3f43c873-0146-4cad-9267-d9c208e1daf6.png)
 ![image](https://user-images.githubusercontent.com/28235504/217679186-3c86180c-407e-4d44-9512-507246740f42.png)
 ![image](https://user-images.githubusercontent.com/28235504/217679137-4e44ae7e-98eb-4050-a622-fcdfe143f522.png)
 ![image](https://user-images.githubusercontent.com/28235504/217679476-28522ebc-c906-4fa7-9718-5a051cb7312d.png)
